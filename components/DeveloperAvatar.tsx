@@ -80,7 +80,7 @@ export default function DeveloperAvatar() {
                Height drives sizing on desktop; width cap prevents overflow on mobile/tablet. */
             height: "min(clamp(260px, 58vh, 600px), calc(85vw * 1.414))",
             width: "auto",
-            maxWidth: "min(85vw, 560px)",
+            maxWidth: "min(85vw, 460px)",
           }}
           draggable={false}
         />

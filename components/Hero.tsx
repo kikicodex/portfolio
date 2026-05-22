@@ -93,12 +93,22 @@ export default function Hero() {
       <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#06b6d4]/[0.05] blur-[100px] pointer-events-none" />
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
+      {/* Avatar — desktop only, absolute so it doesn't affect text centering */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.94 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="hidden lg:flex absolute inset-y-0 right-0 w-[46%] items-end justify-center overflow-hidden z-10 pointer-events-none pb-16"
+      >
+        <DeveloperAvatar />
+      </motion.div>
+
       {/* Main content */}
       <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center max-w-7xl mx-auto">
+        <div className="w-full max-w-7xl mx-auto">
 
-          {/* Left: Text */}
-          <div className="flex flex-col gap-5">
+          {/* Text column — takes left ~54%, avatar is absolute on right */}
+          <div className="lg:max-w-[54%] flex flex-col gap-5">
             {/* Badge */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -124,7 +134,7 @@ export default function Hero() {
             {/* Role — gradient accent */}
             <motion.p
               {...fade(0.45)}
-              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent leading-snug -mt-1"
+              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#a78bfa] to-[#22d3ee] bg-clip-text text-transparent leading-snug -mt-1"
             >
               Computer Science Engineer
             </motion.p>
@@ -132,7 +142,7 @@ export default function Hero() {
             {/* Subtext */}
             <motion.p
               {...fade(0.62)}
-              className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-lg font-light"
+              className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-md font-light"
             >
               Building full-stack and AI-powered products, exploring cybersecurity.
             </motion.p>
@@ -181,12 +191,12 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right: Avatar */}
+          {/* Avatar — mobile only (desktop version is absolute above) */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.92 }}
+            initial={{ opacity: 0, scale: 0.94 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="flex justify-center lg:justify-end overflow-hidden"
+            transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            className="lg:hidden flex justify-center mt-10"
           >
             <DeveloperAvatar />
           </motion.div>
