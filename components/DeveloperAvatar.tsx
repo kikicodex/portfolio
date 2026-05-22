@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 
 export default function DeveloperAvatar() {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const [shift, setShift] = useState({ x: 0, y: 0 });
 
   const rawRotateX = useMotionValue(0);
   const rawRotateY = useMotionValue(0);
@@ -25,11 +27,13 @@ export default function DeveloperAvatar() {
       const ny = Math.max(-1, Math.min(1, (e.clientY - cy) / (window.innerHeight / 2)));
       rawRotateY.set(nx * 8);
       rawRotateX.set(-ny * 6);
+      setShift({ x: nx * 8, y: ny * 6 });
     };
 
     const handleMouseLeave = () => {
       rawRotateX.set(0);
       rawRotateY.set(0);
+      setShift({ x: 0, y: 0 });
     };
 
     window.addEventListener("mousemove", handleMouseMove);
@@ -79,6 +83,8 @@ export default function DeveloperAvatar() {
             width: "min(85vw, 520px)",
             height: "auto",
             objectFit: "contain",
+            transform: `translate(${shift.x}px, ${shift.y}px)`,
+            transition: "transform 0.1s ease-out",
           }}
           draggable={false}
         />
