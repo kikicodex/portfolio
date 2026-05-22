@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DeveloperAvatar from "./DeveloperAvatar";
 
-const headlineWords = ["Keerthana K R", "Full-Stack Engineer."];
+const headlineWords = ["Hi, I'm Keerthana K R —", "a Computer Science Engineer."];
 
 const techStack = [
   "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
@@ -143,9 +143,7 @@ export default function Hero() {
                   key={i}
                   variants={wordVariants}
                   className={`inline-block mr-[0.25em] ${
-                    word === "Keerthana K R" ? "whitespace-nowrap" : ""
-                  } ${
-                    word === "Full-Stack Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#7c3aed] via-[#06b6d4] bg-clip-text text-transparent" : ""
+                    word === "a Computer Science Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#7c3aed] via-[#06b6d4] bg-clip-text text-transparent" : ""
                   }`}
                 >
                   {word}
@@ -160,8 +158,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="text-[#a1a1aa] text-lg md:text-xl leading-relaxed max-w-lg font-light"
             >
-              Full-stack engineer &amp; cybersecurity enthusiast{" "}
-              <span className="text-[#f5f5f5] font-medium">based in Bangalore.</span>
+              Building full-stack and AI-powered products,{" "}
+              <span className="text-[#f5f5f5] font-medium">exploring cybersecurity.</span>
             </motion.p>
 
             {/* CTAs */}
