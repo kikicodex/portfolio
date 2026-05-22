@@ -116,7 +116,7 @@ export default function Hero() {
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center max-w-7xl mx-auto">
 
           {/* Left: Text */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
             {/* Available badge */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -136,7 +136,7 @@ export default function Hero() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="font-black text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.12] tracking-tight text-[#f5f5f5]"
+              className="font-black text-[clamp(1.9rem,3.6vw,3.4rem)] leading-[1.08] tracking-tight text-[#f5f5f5]"
             >
               {headlineWords.map((word, i) => (
                 <motion.span
@@ -156,7 +156,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}
-              className="text-[#a1a1aa] text-lg md:text-xl leading-relaxed max-w-lg font-light"
+              className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-lg font-light"
             >
               Building full-stack and AI-powered products,{" "}
               <span className="text-[#f5f5f5] font-medium">exploring cybersecurity.</span>
@@ -167,7 +167,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="flex flex-wrap gap-4 mt-2"
+              className="flex flex-wrap gap-4"
             >
               <a
                 href="#projects"
