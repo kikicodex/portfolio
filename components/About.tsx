@@ -59,7 +59,7 @@ export default function About() {
   const stats = [
     { value: 3, label: "Apps Shipped" },
     { value: 2, label: "Live in Production" },
-    { value: 6, label: "Months Industry Exp." },
+    { value: 1, label: "Internship" },
   ];
 
   return (
