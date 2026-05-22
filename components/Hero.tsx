@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DeveloperAvatar from "./DeveloperAvatar";
 
-const headlineWords = ["I", "build", "things", "that", "actually", "ship."];
+const headlineWords = ["Making", "things", "work."];
 
 const techStack = [
   "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
