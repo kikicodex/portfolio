@@ -57,9 +57,9 @@ export default function About() {
   const inView = useInView(sectionRef, { once: true, margin: "-80px" });
 
   const stats = [
-    { value: 3, label: "Production Apps" },
-    { value: 2, label: "Live Deployments" },
-    { value: 1, label: "Internship" },
+    { value: 3, label: "Apps Shipped" },
+    { value: 2, label: "Live in Production" },
+    { value: 6, label: "Months Industry Exp." },
   ];
 
   return (

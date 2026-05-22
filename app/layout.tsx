@@ -17,6 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://keerthanakr.vercel.app"),
   title: "Keerthana K R — Full-Stack Engineer & AppSec Enthusiast",
   description:
     "Full-Stack Engineer & AppSec Enthusiast based in Bangalore, India. I build production-grade products with Next.js, React Native, Node.js, and more.",

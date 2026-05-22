@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DeveloperAvatar from "./DeveloperAvatar";
 
-const headlineWords = ["Making", "things", "work."];
+const headlineWords = ["Keerthana", "K R", "Full-Stack", "Engineer."];
 
 const techStack = [
   "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
@@ -143,7 +143,7 @@ export default function Hero() {
                   key={i}
                   variants={wordVariants}
                   className={`inline-block mr-[0.25em] ${
-                    word === "ship." ? "text-glow-purple bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent" : ""
+                    word === "Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent" : ""
                   }`}
                 >
                   {word}
