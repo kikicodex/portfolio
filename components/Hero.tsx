@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import DeveloperAvatar from "./DeveloperAvatar";
 
-const headlineWords = ["Hi, I'm Keerthana K R —", "a Computer Science Engineer."];
+const headlineWords = ["Hi, I'm Keerthana K R.", "a Computer Science Engineer."];
 
 const techStack = [
   "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
@@ -112,7 +112,7 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-10">
+      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16 pb-10">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center max-w-7xl mx-auto">
 
           {/* Left: Text */}
@@ -158,8 +158,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-lg font-light"
             >
-              Building full-stack and AI-powered products,{" "}
-              <span className="text-[#f5f5f5] font-medium">exploring cybersecurity.</span>
+              Building full-stack and AI-powered products, and cybersecurity.
             </motion.p>
 
             {/* CTAs */}
