@@ -63,9 +63,9 @@ export default function Contact() {
           transition={{ delay: 0.1 }}
           className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5] mb-6"
         >
-          Let&apos;s build{" "}
+          Get in{" "}
           <span className="bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent">
-            something.
+            touch.
           </span>
         </motion.h2>
 
