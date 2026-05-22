@@ -47,7 +47,7 @@ export default function Navbar() {
             href="#"
             className="font-black text-xl tracking-tight bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent"
           >
-            KKR
+            Keerthana K R
           </a>
 
           {/* Nav links — desktop */}
