@@ -68,7 +68,7 @@ export default function DeveloperAvatar() {
         className="relative"
       >
         <Image
-          src="/avatar.png"
+          src="/avatar-hero.png"
           alt="Keerthana — developer avatar"
           width={523}
           height={477}
@@ -76,7 +76,7 @@ export default function DeveloperAvatar() {
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
           style={{
-            width: "min(85vw, 560px)",
+            width: "min(85vw, 400px)",
             height: "auto",
             objectFit: "contain",
           }}
