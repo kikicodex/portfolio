@@ -4,11 +4,6 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
-const codeBubbles = [
-  { text: "ship(ideas)", color: "#a78bfa", border: "#7c3aed", x: "-112%", y: "28%", delay: 0.5, dy: -10 },
-  { text: "npm run dev", color: "#06b6d4", border: "#06b6d4", x: "102%",  y: "14%", delay: 1.0, dy: 10 },
-  { text: "git push -u", color: "#a78bfa", border: "#a78bfa", x: "100%",  y: "58%", delay: 1.8, dy: -8 },
-];
 
 export default function DeveloperAvatar() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -91,25 +86,6 @@ export default function DeveloperAvatar() {
         />
       </motion.div>
 
-      {/* Floating code bubbles */}
-      {codeBubbles.map(({ text, color, border, x, y, delay, dy }) => (
-        <motion.div
-          key={text}
-          animate={{ y: [0, dy, 0], opacity: [0.72, 1, 0.72] }}
-          transition={{ duration: 3.2 + delay * 0.3, repeat: Infinity, delay }}
-          className="absolute pointer-events-none whitespace-nowrap px-3 py-1.5 rounded-xl text-[11px] font-mono"
-          style={{
-            left: x,
-            top: y,
-            color,
-            border: `1.4px solid ${border}`,
-            background: "#111118",
-            boxShadow: `0 0 12px ${border}33`,
-          }}
-        >
-          {text}
-        </motion.div>
-      ))}
 
       {/* Sparkles */}
       <motion.div
