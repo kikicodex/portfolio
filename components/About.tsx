@@ -124,7 +124,7 @@ export default function About() {
 
             {/* Traits */}
             <div className="flex flex-wrap gap-3 mt-2">
-              {["AppSec Minded", "Solo Shipper", "Monorepo Architect", "AI Integrator"].map((t) => (
+              {["Full-Stack", "Mobile", "AI", "Cybersecurity"].map((t) => (
                 <span
                   key={t}
                   className="px-3 py-1.5 rounded-full text-xs font-medium border border-[#222] bg-[#111] text-[#a1a1aa]"
