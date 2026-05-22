@@ -22,7 +22,7 @@ const projects: Project[] = [
     title: "KERNEL",
     subtitle: "Industrial Hardware E-Commerce Marketplace",
     description:
-      "A full B2B/B2C marketplace for the Indian industrial hardware market. Built with a Turborepo monorepo, Next.js frontend on Vercel, Express backend on Railway, Razorpay payments, and Clerk authentication with three-tier role gating.",
+      "A full B2C marketplace for the Indian industrial hardware market. Built with a Turborepo monorepo, Next.js frontend on Vercel, Express backend on Railway, Razorpay payments, and Clerk authentication with three-tier role gating.",
     url: "kerneltools.vercel.app",
     tags: ["Next.js 16", "Express.js", "MongoDB", "Clerk", "Razorpay", "Turborepo", "Tailwind CSS"],
     gradient: "from-[#ffd100]/20 via-[#f59e0b]/10 to-[#0a0a0a]",

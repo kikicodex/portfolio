@@ -78,7 +78,7 @@ export default function DeveloperAvatar() {
           style={{
             /* Portrait image (420×594, ratio 1.414h:1w).
                Height drives sizing on desktop; width cap prevents overflow on mobile/tablet. */
-            height: "min(clamp(300px, 68vh, 720px), calc(85vw * 1.414))",
+            height: "min(clamp(260px, 58vh, 600px), calc(85vw * 1.414))",
             width: "auto",
             maxWidth: "min(85vw, 560px)",
           }}
