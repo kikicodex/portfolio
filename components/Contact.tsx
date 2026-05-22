@@ -52,7 +52,7 @@ export default function Contact() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-6"
+          className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-4"
         >
           05 — Contact
         </motion.p>
@@ -73,7 +73,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.2 }}
-          className="text-[#71717a] text-lg max-w-xl mx-auto leading-relaxed mb-12"
+          className="text-[#a1a1aa] text-lg max-w-xl mx-auto leading-relaxed mb-12"
         >
           Open to full-stack, AI engineering, and cybersecurity roles. Based in Bangalore.
         </motion.p>

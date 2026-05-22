@@ -222,7 +222,7 @@ export default function Projects() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#7c3aed]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
-        <div ref={headerRef} className="mb-20">
+        <div ref={headerRef} className="mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
@@ -234,7 +234,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 24 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="font-black text-[clamp(2rem,4vw,3.5rem)] tracking-tight text-[#f5f5f5]"
+            className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
           >
             My work
           </motion.h2>

@@ -73,7 +73,7 @@ export default function About() {
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-12"
+          className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-4"
         >
           01 — About
         </motion.p>
@@ -85,7 +85,7 @@ export default function About() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h2 className="font-black text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
               Made with{" "}
               <span className="bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent">
                 intent.

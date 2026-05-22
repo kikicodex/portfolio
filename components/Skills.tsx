@@ -143,7 +143,7 @@ export default function Skills() {
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="font-black text-[clamp(2rem,4vw,3.5rem)] tracking-tight text-[#f5f5f5]"
+            className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
           >
             What I work with
           </motion.h2>

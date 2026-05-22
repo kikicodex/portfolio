@@ -99,7 +99,7 @@ function TimelineCard({ item, index }: { item: TimelineItem; index: number }) {
           </div>
         </div>
         {item.description && (
-          <p className="mt-3 text-sm text-[#71717a] leading-relaxed">{item.description}</p>
+          <p className="mt-3 text-sm text-[#a1a1aa] leading-relaxed">{item.description}</p>
         )}
       </div>
     </motion.div>
@@ -127,7 +127,7 @@ export default function Experience() {
             initial={{ opacity: 0, y: 24 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
-            className="font-black text-[clamp(2rem,4vw,3.5rem)] tracking-tight text-[#f5f5f5]"
+            className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
           >
             The journey so far
           </motion.h2>
