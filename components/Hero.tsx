@@ -112,8 +112,8 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-12">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center max-w-7xl mx-auto">
+      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-24 pb-4">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center max-w-7xl mx-auto">
 
           {/* Left: Text */}
           <div className="flex flex-col gap-6">

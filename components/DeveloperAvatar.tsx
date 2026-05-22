@@ -51,15 +51,15 @@ export default function DeveloperAvatar() {
       className="relative flex justify-center items-center"
       style={{ perspective: "900px" }}
     >
-      {/* Glow orbs behind the image */}
+      {/* Glow behind the image */}
       <div
         className="absolute rounded-full pointer-events-none"
         style={{
-          width: "260px",
-          height: "340px",
-          background: "radial-gradient(ellipse at 40% 40%, rgba(124,58,237,0.35) 0%, rgba(6,182,212,0.15) 60%, transparent 80%)",
-          filter: "blur(32px)",
-          top: "10%",
+          width: "380px",
+          height: "520px",
+          background: "radial-gradient(ellipse at 40% 38%, rgba(124,58,237,0.38) 0%, rgba(6,182,212,0.16) 55%, transparent 78%)",
+          filter: "blur(52px)",
+          top: "6%",
           left: "50%",
           transform: "translateX(-50%)",
         }}
@@ -67,7 +67,7 @@ export default function DeveloperAvatar() {
 
       {/* Float + tilt wrapper */}
       <motion.div
-        animate={{ y: [0, -14, 0] }}
+        animate={{ y: [0, -8, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
         className="relative"
@@ -78,8 +78,15 @@ export default function DeveloperAvatar() {
           width={420}
           height={594}
           priority
-          className="w-auto select-none"
-          style={{ height: "clamp(320px, 45vh, 520px)", width: "auto" }}
+          sizes="(max-width: 1023px) 85vw, 45vw"
+          className="select-none w-auto"
+          style={{
+            /* Portrait image (420×594, ratio 1.414h:1w).
+               Height drives sizing on desktop; width cap prevents overflow on mobile/tablet. */
+            height: "min(clamp(300px, 74vh, 780px), calc(85vw * 1.414))",
+            width: "auto",
+            maxWidth: "min(85vw, 560px)",
+          }}
           draggable={false}
         />
       </motion.div>
