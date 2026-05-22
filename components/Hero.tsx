@@ -105,8 +105,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
 
       {/* Radial purple glow */}
-      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#7c3aed]/8 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#06b6d4]/6 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#7c3aed]/[0.065] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#06b6d4]/[0.05] blur-[100px] pointer-events-none" />
 
       {/* Particle canvas */}
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
@@ -136,7 +136,7 @@ export default function Hero() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="font-black text-[clamp(3rem,7vw,5.5rem)] leading-[1.05] tracking-tight text-[#f5f5f5]"
+              className="font-black text-[clamp(3rem,7vw,5.5rem)] leading-[1.12] tracking-tight text-[#f5f5f5]"
             >
               {headlineWords.map((word, i) => (
                 <motion.span
@@ -172,7 +172,7 @@ export default function Hero() {
             >
               <a
                 href="#projects"
-                className="px-6 py-3 rounded-full font-semibold text-sm bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_24px_rgba(124,58,237,0.5)]"
+                className="px-6 py-3 rounded-full font-semibold text-sm bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_20px_rgba(124,58,237,0.43)]"
               >
                 View My Work
               </a>

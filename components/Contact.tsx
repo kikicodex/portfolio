@@ -46,7 +46,7 @@ export default function Contact() {
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#7c3aed]/40 to-transparent" />
 
       {/* Big glow backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#7c3aed]/6 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#7c3aed]/[0.05] blur-[120px] pointer-events-none" />
 
       <div ref={ref} className="relative max-w-4xl mx-auto text-center">
         <motion.p
@@ -88,7 +88,7 @@ export default function Contact() {
         >
           <button
             onClick={handleCopyEmail}
-            className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_40px_rgba(124,58,237,0.4)] active:scale-95"
+            className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_34px_rgba(124,58,237,0.34)] active:scale-95"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -115,7 +115,7 @@ export default function Contact() {
             href="https://github.com/kikicodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#7c3aed]/50 hover:shadow-[0_0_20px_rgba(124,58,237,0.2)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#7c3aed]/50 hover:shadow-[0_0_17px_rgba(124,58,237,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <GitHubIcon />
             GitHub
@@ -124,7 +124,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/keerthana-krr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#06b6d4]/50 hover:shadow-[0_0_20px_rgba(6,182,212,0.2)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#06b6d4]/50 hover:shadow-[0_0_17px_rgba(6,182,212,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <LinkedInIcon />
             LinkedIn
