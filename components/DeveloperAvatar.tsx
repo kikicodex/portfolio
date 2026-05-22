@@ -70,15 +70,14 @@ export default function DeveloperAvatar() {
         <Image
           src="/avatar.png"
           alt="Keerthana — developer avatar"
-          width={420}
-          height={594}
+          width={523}
+          height={477}
           priority
           sizes="(max-width: 1023px) 85vw, 45vw"
-          className="select-none w-auto"
+          className="select-none"
           style={{
-            height: "min(clamp(260px, 58vh, 600px), 90vw)",
-            width: "auto",
-            maxWidth: "min(85vw, 460px)",
+            width: "min(85vw, 480px)",
+            height: "auto",
             objectFit: "contain",
           }}
           draggable={false}
