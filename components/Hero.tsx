@@ -86,7 +86,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a]"
+      className="relative min-h-screen flex flex-col bg-[#0a0a0a]"
     >
       <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#7c3aed]/[0.065] blur-[120px] pointer-events-none" />
@@ -98,9 +98,9 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.94 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.9, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-        className="hidden lg:flex absolute inset-y-0 right-0 w-[46%] items-end justify-center z-10 pointer-events-none pb-16"
+        className="hidden lg:flex absolute top-0 bottom-[-60px] right-0 w-[52%] items-end justify-end z-10 pointer-events-none"
       >
-        <DeveloperAvatar />
+        <DeveloperAvatar variant="desktop" />
       </motion.div>
 
       {/* Main content */}
