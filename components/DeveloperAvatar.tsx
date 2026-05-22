@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 
-export default function DeveloperAvatar({ variant = "mobile" }: { variant?: "desktop" | "mobile" }) {
+export default function DeveloperAvatar() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const rawRotateX = useMotionValue(0);
@@ -50,8 +50,8 @@ export default function DeveloperAvatar({ variant = "mobile" }: { variant?: "des
       <div
         className="absolute rounded-full pointer-events-none"
         style={{
-          width: variant === "desktop" ? "480px" : "320px",
-          height: variant === "desktop" ? "680px" : "480px",
+          width: "380px",
+          height: "520px",
           background: "radial-gradient(ellipse at 40% 38%, rgba(124,58,237,0.32) 0%, rgba(6,182,212,0.13) 55%, transparent 78%)",
           filter: "blur(52px)",
           top: "6%",
@@ -62,7 +62,7 @@ export default function DeveloperAvatar({ variant = "mobile" }: { variant?: "des
 
       {/* Float + tilt wrapper */}
       <motion.div
-        animate={{ y: [0, -6, 0] }}
+        animate={{ y: [0, -8, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
         className="relative"
@@ -70,16 +70,16 @@ export default function DeveloperAvatar({ variant = "mobile" }: { variant?: "des
         <Image
           src="/avatar-hero.png"
           alt="Keerthana — developer avatar"
-          width={420}
-          height={594}
+          width={523}
+          height={477}
           priority
-          sizes="(max-width: 1023px) 80vw, 48vw"
+          sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
-          style={
-            variant === "desktop"
-              ? { width: "auto", height: "95vh", maxHeight: "960px", objectFit: "contain" }
-              : { width: "min(80vw, 360px)", height: "auto", objectFit: "contain" }
-          }
+          style={{
+            width: "min(85vw, 400px)",
+            height: "auto",
+            objectFit: "contain",
+          }}
           draggable={false}
         />
       </motion.div>
