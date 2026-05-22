@@ -112,11 +112,11 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16 pb-10">
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-center max-w-7xl mx-auto">
+      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-20 pb-10">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4 items-start max-w-7xl mx-auto">
 
           {/* Left: Text */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-5">
             {/* Available badge */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -136,14 +136,14 @@ export default function Hero() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="font-black text-[clamp(1.9rem,3.6vw,3.4rem)] leading-[1.08] tracking-tight text-[#f5f5f5]"
+              className="font-black text-[clamp(2rem,3.8vw,3.6rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
             >
               {headlineWords.map((word, i) => (
                 <motion.span
                   key={i}
                   variants={wordVariants}
                   className={`inline-block mr-[0.25em] ${
-                    word === "a Computer Science Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#7c3aed] via-[#06b6d4] bg-clip-text text-transparent" : ""
+                    word === "a Computer Science Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent" : ""
                   }`}
                 >
                   {word}
@@ -158,7 +158,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-lg font-light"
             >
-              Building full-stack and AI-powered products, and cybersecurity.
+              Building full-stack and AI-powered products, exploring cybersecurity.
             </motion.p>
 
             {/* CTAs */}
@@ -188,7 +188,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end lg:pt-2"
           >
             <DeveloperAvatar />
           </motion.div>
