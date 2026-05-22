@@ -158,9 +158,8 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 1.0 }}
               className="text-[#a1a1aa] text-lg md:text-xl leading-relaxed max-w-lg font-light"
             >
-              Full-Stack Engineer &amp; AppSec Enthusiast based in Bangalore.
-              I turn ideas into{" "}
-              <span className="text-[#f5f5f5] font-medium">production-grade products.</span>
+              Hi, I&apos;m Keerthana K R — a full-stack engineer and{" "}
+              <span className="text-[#f5f5f5] font-medium">cybersecurity enthusiast.</span>
             </motion.p>
 
             {/* CTAs */}
