@@ -136,13 +136,15 @@ export default function Hero() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              className="font-black text-[clamp(3rem,7vw,5.5rem)] leading-[1.12] tracking-tight text-[#f5f5f5]"
+              className="font-black text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.12] tracking-tight text-[#f5f5f5]"
             >
               {headlineWords.map((word, i) => (
                 <motion.span
                   key={i}
                   variants={wordVariants}
                   className={`inline-block mr-[0.25em] ${
+                    word === "Keerthana K R" ? "whitespace-nowrap" : ""
+                  } ${
                     word === "Full-Stack Engineer." ? "bg-gradient-to-r from-[#7c3aed] to-[#7c3aed] via-[#06b6d4] bg-clip-text text-transparent" : ""
                   }`}
                 >
