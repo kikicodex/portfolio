@@ -70,13 +70,13 @@ export default function DeveloperAvatar() {
         <Image
           src="/avatar-hero.png"
           alt="Keerthana — developer avatar"
-          width={523}
-          height={477}
+          width={420}
+          height={594}
           priority
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
           style={{
-            width: "min(85vw, 400px)",
+            width: "min(85vw, 460px)",
             height: "auto",
             objectFit: "contain",
           }}

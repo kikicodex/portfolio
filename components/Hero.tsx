@@ -147,22 +147,6 @@ export default function Hero() {
               Building full-stack, AI-powered, and security-focused products.
             </motion.p>
 
-            {/* CTAs */}
-            <motion.div {...fade(0.78)} className="flex flex-wrap gap-4">
-              <a
-                href="#projects"
-                className="px-6 py-3 rounded-full font-semibold text-sm bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_20px_rgba(124,58,237,0.43)]"
-              >
-                View My Work
-              </a>
-              <a
-                href="#contact"
-                className="px-6 py-3 rounded-full font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all duration-200"
-              >
-                Get In Touch
-              </a>
-            </motion.div>
-
           </div>
 
           {/* Avatar — mobile only (desktop version is absolute above) */}
@@ -176,6 +160,29 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+
+      {/* CTAs — pinned at bottom of hero above marquee */}
+      <motion.div
+        {...fade(0.78)}
+        className="relative z-10 px-6 md:px-16 lg:px-24 pb-10"
+      >
+        <div className="w-full max-w-7xl mx-auto">
+          <div className="lg:max-w-[54%] flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="px-6 py-3 rounded-full font-semibold text-sm bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-all duration-200 hover:shadow-[0_0_20px_rgba(124,58,237,0.43)]"
+            >
+              View My Work
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-full font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#7c3aed] hover:text-[#7c3aed] transition-all duration-200"
+            >
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Tech marquee */}
       <div className="relative z-10 border-t border-[#1a1a1a] py-5 overflow-hidden">
