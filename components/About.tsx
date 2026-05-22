@@ -108,8 +108,8 @@ export default function About() {
             className="flex flex-col gap-8"
           >
             <p className="text-[#a1a1aa] text-lg leading-[1.85] font-light">
-              CS grad from{" "}
-              <span className="text-[#f5f5f5] font-medium">VTU Bangalore</span>. I&apos;ve built a
+              <span className="text-[#f5f5f5] font-medium">CS grad</span>{" "}
+              from VTU Bangalore. I&apos;ve built a
               B2B hardware marketplace, a cross-platform AI study app, and a healthcare data tool —
               all solo, all live in production.
             </p>
