@@ -236,7 +236,7 @@ export default function Projects() {
             transition={{ delay: 0.1 }}
             className="font-black text-[clamp(2rem,4vw,3.5rem)] tracking-tight text-[#f5f5f5]"
           >
-            Things I&apos;ve shipped
+            My work
           </motion.h2>
         </div>
 

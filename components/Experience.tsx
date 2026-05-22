@@ -19,7 +19,7 @@ const items: TimelineItem[] = [
     org: "Rooman Technologies",
     period: "Sep 2024 – Feb 2025",
     description:
-      "Applied statistical analysis, hypothesis testing, and data validation pipelines to real-world datasets. Delivered insights that shaped data quality standards across client projects.",
+      "Applied statistical analysis, hypothesis testing, and data validation pipelines to real-world datasets.",
     badge: "Work",
   },
   {
@@ -27,7 +27,7 @@ const items: TimelineItem[] = [
     title: "B.E. Computer Science & Engineering",
     org: "Don Bosco Institute of Technology, VTU",
     period: "Graduated 2025",
-    description: "CGPA: 7.1/10 · Focused on algorithms, distributed systems, and network security.",
+    description: "CGPA: 7.1/10",
     badge: "Education",
   },
   {
