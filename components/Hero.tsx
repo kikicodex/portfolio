@@ -94,7 +94,7 @@ export default function Hero() {
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24">
+      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-6 items-center max-w-7xl mx-auto">
 
           {/* Left: Text */}
@@ -186,7 +186,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end overflow-hidden"
           >
             <DeveloperAvatar />
           </motion.div>
