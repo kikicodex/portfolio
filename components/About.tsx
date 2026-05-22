@@ -86,9 +86,9 @@ export default function About() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             <h2 className="font-black text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
-              I don&apos;t just write code.{" "}
+              Made with{" "}
               <span className="bg-gradient-to-r from-[#7c3aed] to-[#06b6d4] bg-clip-text text-transparent">
-                I ship products.
+                intent.
               </span>
             </h2>
 
