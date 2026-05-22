@@ -70,8 +70,8 @@ export default function DeveloperAvatar() {
         <Image
           src="/avatar-hero.png"
           alt="Keerthana — developer avatar"
-          width={420}
-          height={594}
+          width={523}
+          height={477}
           priority
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
