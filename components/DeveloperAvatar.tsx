@@ -76,11 +76,10 @@ export default function DeveloperAvatar() {
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none w-auto"
           style={{
-            /* Portrait image (420×594, ratio 1.414h:1w).
-               Height drives sizing on desktop; width cap prevents overflow on mobile/tablet. */
-            height: "min(clamp(260px, 58vh, 600px), calc(85vw * 1.414))",
+            height: "min(clamp(260px, 58vh, 600px), 90vw)",
             width: "auto",
             maxWidth: "min(85vw, 460px)",
+            objectFit: "contain",
           }}
           draggable={false}
         />
