@@ -65,7 +65,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="/resume.pdf" download
+            href="/resume.pdf"
             download
             className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-[#7c3aed] text-white hover:bg-[#9d5ff0] transition-colors duration-200"
           >
@@ -127,7 +127,7 @@ function MobileMenu() {
               </a>
             ))}
             <a
-              href="/resume.pdf" download
+              href="/resume.pdf"
               download
               className="mt-2 inline-flex w-fit items-center px-4 py-2 rounded-full text-sm font-semibold bg-[#7c3aed] text-white"
             >
