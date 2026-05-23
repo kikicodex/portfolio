@@ -142,7 +142,7 @@ export default function Hero() {
             {/* Subtext */}
             <motion.p
               {...fade(0.62)}
-              className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-md font-light"
+              className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-lg font-light text-pretty"
             >
               Building full-stack, AI-powered, and security-focused products.
             </motion.p>
