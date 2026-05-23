@@ -27,7 +27,7 @@ export default function DeveloperAvatar() {
       const ny = Math.max(-1, Math.min(1, (e.clientY - cy) / (window.innerHeight / 2)));
       rawRotateY.set(nx * 8);
       rawRotateX.set(-ny * 6);
-      setShift({ x: nx * 8, y: ny * 6 });
+      setShift({ x: nx * 3, y: ny * 2 });
     };
 
     const handleMouseLeave = () => {
