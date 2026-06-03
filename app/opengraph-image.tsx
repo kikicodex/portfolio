@@ -31,7 +31,7 @@ export default function Image() {
             width: 560,
             height: 560,
             borderRadius: "50%",
-            background: "rgba(124,58,237,0.28)",
+            background: "rgba(236,72,153,0.28)",
             filter: "blur(110px)",
           }}
         />
@@ -54,7 +54,7 @@ export default function Image() {
           <span
             style={{
               fontSize: 18,
-              color: "#7c3aed",
+              color: "#ec4899",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               fontWeight: 500,
@@ -96,8 +96,8 @@ export default function Image() {
                 style={{
                   padding: "8px 20px",
                   borderRadius: 24,
-                  border: "1px solid rgba(124,58,237,0.45)",
-                  color: "#a78bfa",
+                  border: "1px solid rgba(236,72,153,0.45)",
+                  color: "#f9a8d4",
                   fontSize: 20,
                   fontWeight: 500,
                 }}

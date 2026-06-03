@@ -37,8 +37,8 @@ const projects: Project[] = [
       "Cross-platform app (web + iOS + Android) for VTU engineering students. AI-generated answers via OpenAI GPT-4o through a secure server-side proxy, adaptive quizzes, community feed, and study analytics.",
     url: "engineerease.vercel.app",
     tags: ["Expo", "React Native", "Firebase", "OpenAI GPT-4o", "Cloudinary", "Vercel"],
-    gradient: "from-[#7c3aed]/20 via-[#06b6d4]/10 to-[#0a0a0a]",
-    accent: "#7c3aed",
+    gradient: "from-[#ec4899]/20 via-[#06b6d4]/10 to-[#0a0a0a]",
+    accent: "#ec4899",
     mockLines: ["GPT-4o Powered Q&A", "iOS + Android + Web", "Adaptive Quizzes", "VTU Syllabus"],
   },
   {
@@ -172,7 +172,7 @@ function ProjectTiltCard({
           {project.title}
         </h3>
 
-        <p className="text-[#7c3aed] font-semibold text-base">{project.subtitle}</p>
+        <p className="text-[#ec4899] font-semibold text-base">{project.subtitle}</p>
 
         <p className="text-[#a1a1aa] text-base leading-relaxed font-light">{project.description}</p>
 
@@ -181,7 +181,7 @@ function ProjectTiltCard({
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-1 rounded-md text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#7c3aed]/50 transition-all duration-200"
+              className="px-2.5 py-1 rounded-md text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#ec4899]/50 transition-all duration-200"
             >
               {tag}
             </span>
@@ -219,14 +219,14 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#7c3aed]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ec4899]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         <div ref={headerRef} className="mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#ec4899] mb-4"
           >
             02 — Projects
           </motion.p>

@@ -15,7 +15,7 @@ const categories: SkillCategory[] = [
     name: "Languages",
     icon: "{ }",
     skills: ["JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"],
-    accent: "#7c3aed",
+    accent: "#ec4899",
   },
   {
     name: "Frontend & Mobile",
@@ -27,7 +27,7 @@ const categories: SkillCategory[] = [
     name: "Backend & DB",
     icon: "⬡",
     skills: ["Node.js", "Express.js", "MongoDB", "Firebase", "Firestore", "REST APIs"],
-    accent: "#7c3aed",
+    accent: "#ec4899",
   },
   {
     name: "Cloud & DevOps",
@@ -39,7 +39,7 @@ const categories: SkillCategory[] = [
     name: "Auth & Payments",
     icon: "⚿",
     skills: ["Clerk", "Firebase Auth", "Razorpay", "JWT"],
-    accent: "#a78bfa",
+    accent: "#f9a8d4",
   },
   {
     name: "Security",
@@ -135,7 +135,7 @@ export default function Skills() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#7c3aed] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#ec4899] mb-4"
           >
             03 — Skills
           </motion.p>
