@@ -43,16 +43,16 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-32 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#C4501C]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#8B5535]/40 to-transparent" />
 
       {/* Big glow backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#C4501C]/[0.05] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#8B5535]/[0.05] blur-[120px] pointer-events-none" />
 
       <div ref={ref} className="relative max-w-4xl mx-auto text-center">
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-xs font-mono tracking-[0.2em] uppercase text-[#C4501C] mb-4"
+          className="text-xs font-mono tracking-[0.2em] uppercase text-[#8B5535] mb-4"
         >
           05 — Contact
         </motion.p>
@@ -64,7 +64,7 @@ export default function Contact() {
           className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5] mb-6"
         >
           Get in{" "}
-          <span className="bg-gradient-to-r from-[#C4501C] to-[#D4903A] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#8B5535] to-[#6B3F24] bg-clip-text text-transparent">
             touch.
           </span>
         </motion.h2>
@@ -87,7 +87,7 @@ export default function Contact() {
         >
           <button
             onClick={handleCopyEmail}
-            className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base bg-[#C4501C] text-white hover:bg-[#D4622A] transition-all duration-200 hover:shadow-[0_0_34px_rgba(196,80,28,0.34)] active:scale-95"
+            className="group flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base bg-[#8B5535] text-white hover:bg-[#7A4428] transition-all duration-200 hover:shadow-[0_0_34px_rgba(139,85,53,0.34)] active:scale-95"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -114,7 +114,7 @@ export default function Contact() {
             href="https://github.com/kikicodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#C4501C]/50 hover:shadow-[0_0_17px_rgba(196,80,28,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#8B5535]/50 hover:shadow-[0_0_17px_rgba(139,85,53,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <GitHubIcon />
             GitHub
@@ -123,7 +123,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/keerthana-krr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#D4903A]/50 hover:shadow-[0_0_17px_rgba(212,144,58,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#6B3F24]/50 hover:shadow-[0_0_17px_rgba(107,63,36,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <LinkedInIcon />
             LinkedIn
@@ -139,7 +139,7 @@ export default function Contact() {
         >
           <p className="text-xs text-[#3f3f46] font-mono">
             Designed &amp; built by{" "}
-            <span className="text-[#C4501C]">Keerthana K R</span>
+            <span className="text-[#8B5535]">Keerthana K R</span>
           </p>
         </motion.div>
       </div>

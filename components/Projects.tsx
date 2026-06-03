@@ -37,8 +37,8 @@ const projects: Project[] = [
       "Cross-platform app (web + iOS + Android) for VTU engineering students. AI-generated answers via OpenAI GPT-4o through a secure server-side proxy, adaptive quizzes, community feed, and study analytics.",
     url: "engineerease.vercel.app",
     tags: ["Expo", "React Native", "Firebase", "OpenAI GPT-4o", "Cloudinary", "Vercel"],
-    gradient: "from-[#C4501C]/20 via-[#D4903A]/10 to-[#0a0a0a]",
-    accent: "#C4501C",
+    gradient: "from-[#8B5535]/20 via-[#6B3F24]/10 to-[#0a0a0a]",
+    accent: "#8B5535",
     mockLines: ["GPT-4o Powered Q&A", "iOS + Android + Web", "Adaptive Quizzes", "VTU Syllabus"],
   },
   {
@@ -48,7 +48,7 @@ const projects: Project[] = [
     description:
       "Python-based automated tool for cleaning and standardising healthcare records. Features text standardisation, duplicate detection, blood-pressure validation, and Isolation Forest anomaly detection via a Streamlit web interface.",
     tags: ["Python", "Streamlit", "scikit-learn", "NLP", "Pandas"],
-    gradient: "from-[#10b981]/20 via-[#D4903A]/10 to-[#0a0a0a]",
+    gradient: "from-[#10b981]/20 via-[#6B3F24]/10 to-[#0a0a0a]",
     accent: "#10b981",
     badge: "IBM Certified",
     mockLines: ["NLP Standardisation", "Anomaly Detection", "BP Validation", "Streamlit UI"],
@@ -172,7 +172,7 @@ function ProjectTiltCard({
           {project.title}
         </h3>
 
-        <p className="text-[#C4501C] font-semibold text-base">{project.subtitle}</p>
+        <p className="text-[#8B5535] font-semibold text-base">{project.subtitle}</p>
 
         <p className="text-[#a1a1aa] text-base leading-relaxed font-light">{project.description}</p>
 
@@ -181,7 +181,7 @@ function ProjectTiltCard({
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-1 rounded-md text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#C4501C]/50 transition-all duration-200"
+              className="px-2.5 py-1 rounded-md text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#8B5535]/50 transition-all duration-200"
             >
               {tag}
             </span>
@@ -219,14 +219,14 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#C4501C]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#8B5535]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         <div ref={headerRef} className="mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#C4501C] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#8B5535] mb-4"
           >
             02 — Projects
           </motion.p>

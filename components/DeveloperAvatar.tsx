@@ -56,7 +56,7 @@ export default function DeveloperAvatar() {
         style={{
           width: "380px",
           height: "520px",
-          background: "radial-gradient(ellipse at 40% 38%, rgba(196,80,28,0.32) 0%, rgba(212,144,58,0.13) 55%, transparent 78%)",
+          background: "radial-gradient(ellipse at 40% 38%, rgba(139,85,53,0.32) 0%, rgba(107,63,36,0.13) 55%, transparent 78%)",
           filter: "blur(52px)",
           top: "6%",
           left: "50%",
@@ -99,7 +99,7 @@ export default function DeveloperAvatar() {
         style={{ left: "-18%", top: "12%" }}
       >
         <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M11 1 L12.5 9 L20 11 L12.5 13 L11 21 L9.5 13 L2 11 L9.5 9Z" fill="#C4501C" opacity="0.85" />
+          <path d="M11 1 L12.5 9 L20 11 L12.5 13 L11 21 L9.5 13 L2 11 L9.5 9Z" fill="#8B5535" opacity="0.85" />
         </svg>
       </motion.div>
       <motion.div
@@ -109,7 +109,7 @@ export default function DeveloperAvatar() {
         style={{ right: "-10%", top: "6%" }}
       >
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M9 1 L10.2 7.4 L16 9 L10.2 10.6 L9 17 L7.8 10.6 L2 9 L7.8 7.4Z" fill="#D4903A" opacity="0.8" />
+          <path d="M9 1 L10.2 7.4 L16 9 L10.2 10.6 L9 17 L7.8 10.6 L2 9 L7.8 7.4Z" fill="#6B3F24" opacity="0.8" />
         </svg>
       </motion.div>
       <motion.div
@@ -119,8 +119,8 @@ export default function DeveloperAvatar() {
         style={{ right: "-6%", bottom: "18%" }}
       >
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <circle cx="7" cy="7" r="5" fill="#C4501C" opacity="0.4" />
-          <circle cx="7" cy="7" r="2.5" fill="#E8B060" opacity="0.65" />
+          <circle cx="7" cy="7" r="5" fill="#8B5535" opacity="0.4" />
+          <circle cx="7" cy="7" r="2.5" fill="#7A4428" opacity="0.65" />
         </svg>
       </motion.div>
     </div>

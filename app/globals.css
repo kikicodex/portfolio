@@ -40,7 +40,7 @@ body {
   background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C4501C;
+  background: #8B5535;
   border-radius: 2px;
 }
 
@@ -75,14 +75,14 @@ body {
   border: 1px solid #222222;
 }
 .skill-tag:hover {
-  border-color: #C4501C;
+  border-color: #8B5535;
   box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
   color: #f5f5f5;
 }
 
 /* Timeline line */
 .timeline-line {
-  background: linear-gradient(to bottom, #C4501C, #D4903A);
+  background: linear-gradient(to bottom, #8B5535, #6B3F24);
 }
 
 /* Noise overlay */
