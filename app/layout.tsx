@@ -59,7 +59,7 @@ export default function RootLayout({
           toastOptions={{
             style: {
               background: "#161616",
-              border: "1px solid #c87941",
+              border: "1px solid #C4501C",
               color: "#f5f5f5",
               fontFamily: "var(--font-inter)",
             },

@@ -54,8 +54,8 @@ const items: TimelineItem[] = [
 ];
 
 const badgeColors: Record<string, { bg: string; text: string; border: string }> = {
-  Work: { bg: "#c8794112", text: "#d4894e", border: "#c8794140" },
-  Education: { bg: "#e8c49a12", text: "#e8c49a", border: "#e8c49a40" },
+  Work: { bg: "#C4501C12", text: "#D4622A", border: "#C4501C40" },
+  Education: { bg: "#D4903A12", text: "#D4903A", border: "#D4903A40" },
   Cert: { bg: "#f59e0b12", text: "#fbbf24", border: "#f59e0b40" },
 };
 
@@ -74,17 +74,17 @@ function TimelineCard({ item, index }: { item: TimelineItem; index: number }) {
     >
       {/* Dot on the line */}
       <div
-        className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 border-[#c87941] bg-[#0a0a0a] z-10 flex items-center justify-center"
+        className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 border-[#C4501C] bg-[#0a0a0a] z-10 flex items-center justify-center"
       >
-        <div className="w-1.5 h-1.5 rounded-full bg-[#c87941]" />
+        <div className="w-1.5 h-1.5 rounded-full bg-[#C4501C]" />
       </div>
 
       {/* Card */}
-      <div className="group p-5 rounded-2xl border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#c87941]/30 transition-all duration-300">
+      <div className="group p-5 rounded-2xl border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#C4501C]/30 transition-all duration-300">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <h3 className="font-bold text-[#f5f5f5] text-base leading-snug">{item.title}</h3>
-            <p className="text-[#c87941] text-sm font-medium mt-0.5">{item.org}</p>
+            <p className="text-[#C4501C] text-sm font-medium mt-0.5">{item.org}</p>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
             {item.badge && (
@@ -112,14 +112,14 @@ export default function Experience() {
 
   return (
     <section id="experience" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#c87941]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#C4501C]/40 to-transparent" />
 
       <div className="max-w-3xl mx-auto">
         <div ref={headerRef} className="mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#c87941] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#C4501C] mb-4"
           >
             04 — Experience & Education
           </motion.p>
@@ -136,7 +136,7 @@ export default function Experience() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#c87941] via-[#c87941]/40 to-transparent" />
+          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#C4501C] via-[#C4501C]/40 to-transparent" />
 
           <div className="flex flex-col gap-6">
             {items.map((item, i) => (
