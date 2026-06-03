@@ -45,7 +45,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#"
-            className="font-black text-xl tracking-tight bg-gradient-to-r from-[#ec4899] to-[#06b6d4] bg-clip-text text-transparent"
+            className="font-black text-xl tracking-tight bg-gradient-to-r from-[#ff6b6b] to-[#14b8a6] bg-clip-text text-transparent"
           >
             Keerthana K R
           </a>
@@ -67,7 +67,7 @@ export default function Navbar() {
           <a
             href="/resume.pdf"
             download
-            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-[#ec4899] text-white hover:bg-[#f472b6] transition-colors duration-200"
+            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-[#ff6b6b] text-white hover:bg-[#ff8585] transition-colors duration-200"
           >
             Download Resume
           </a>
@@ -129,7 +129,7 @@ function MobileMenu() {
             <a
               href="/resume.pdf"
               download
-              className="mt-2 inline-flex w-fit items-center px-4 py-2 rounded-full text-sm font-semibold bg-[#ec4899] text-white"
+              className="mt-2 inline-flex w-fit items-center px-4 py-2 rounded-full text-sm font-semibold bg-[#ff6b6b] text-white"
             >
               Download Resume
             </a>

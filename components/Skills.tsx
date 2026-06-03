@@ -15,31 +15,31 @@ const categories: SkillCategory[] = [
     name: "Languages",
     icon: "{ }",
     skills: ["JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"],
-    accent: "#ec4899",
+    accent: "#ff6b6b",
   },
   {
     name: "Frontend & Mobile",
     icon: "◻",
     skills: ["Next.js", "React", "React Native", "Expo", "Tailwind CSS", "Zustand"],
-    accent: "#06b6d4",
+    accent: "#14b8a6",
   },
   {
     name: "Backend & DB",
     icon: "⬡",
     skills: ["Node.js", "Express.js", "MongoDB", "Firebase", "Firestore", "REST APIs"],
-    accent: "#ec4899",
+    accent: "#ff6b6b",
   },
   {
     name: "Cloud & DevOps",
     icon: "☁",
     skills: ["Vercel", "Railway", "Cloudinary", "Turborepo", "pnpm"],
-    accent: "#06b6d4",
+    accent: "#14b8a6",
   },
   {
     name: "Auth & Payments",
     icon: "⚿",
     skills: ["Clerk", "Firebase Auth", "Razorpay", "JWT"],
-    accent: "#f9a8d4",
+    accent: "#ffb3b3",
   },
   {
     name: "Security",
@@ -51,7 +51,7 @@ const categories: SkillCategory[] = [
     name: "AI / ML",
     icon: "◈",
     skills: ["OpenAI GPT-4o", "NLP", "scikit-learn", "Pandas", "Streamlit"],
-    accent: "#06b6d4",
+    accent: "#14b8a6",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#06b6d4]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#14b8a6]/40 to-transparent" />
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">
@@ -135,7 +135,7 @@ export default function Skills() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#ec4899] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#ff6b6b] mb-4"
           >
             03 — Skills
           </motion.p>

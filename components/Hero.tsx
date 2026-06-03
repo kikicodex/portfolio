@@ -54,7 +54,7 @@ export default function Hero() {
         if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(236,72,153,${p.opacity})`;
+        ctx.fillStyle = `rgba(255,107,107,${p.opacity})`;
         ctx.fill();
       });
 
@@ -65,7 +65,7 @@ export default function Hero() {
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < 120) {
             ctx.beginPath();
-            ctx.strokeStyle = `rgba(236,72,153,${0.08 * (1 - dist / 120)})`;
+            ctx.strokeStyle = `rgba(255,107,107,${0.08 * (1 - dist / 120)})`;
             ctx.lineWidth = 0.5;
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
@@ -89,8 +89,8 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a]"
     >
       <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#ec4899]/[0.065] blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#06b6d4]/[0.05] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#ff6b6b]/[0.065] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#14b8a6]/[0.05] blur-[100px] pointer-events-none" />
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Avatar — desktop only, absolute so it doesn't affect text centering */}
@@ -134,7 +134,7 @@ export default function Hero() {
             {/* Role — gradient accent */}
             <motion.p
               {...fade(0.45)}
-              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#f9a8d4] to-[#22d3ee] bg-clip-text text-transparent leading-snug -mt-1"
+              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#ffb3b3] to-[#2dd4bf] bg-clip-text text-transparent leading-snug -mt-1"
             >
               Computer Science Engineer
             </motion.p>
@@ -170,13 +170,13 @@ export default function Hero() {
           <div className="lg:max-w-[54%] flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-full font-semibold text-sm bg-[#ec4899] text-white hover:bg-[#f472b6] transition-all duration-200 hover:shadow-[0_0_20px_rgba(236,72,153,0.43)]"
+              className="px-6 py-3 rounded-full font-semibold text-sm bg-[#ff6b6b] text-white hover:bg-[#ff8585] transition-all duration-200 hover:shadow-[0_0_20px_rgba(255,107,107,0.43)]"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 rounded-full font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#ec4899] hover:text-[#ec4899] transition-all duration-200"
+              className="px-6 py-3 rounded-full font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#ff6b6b] hover:text-[#ff6b6b] transition-all duration-200"
             >
               Get In Touch
             </a>
@@ -189,7 +189,7 @@ export default function Hero() {
         <div className="flex gap-0 items-center whitespace-nowrap w-max animate-marquee">
           {techStack.map((tech, i) => (
             <span key={i} className="inline-flex items-center gap-3 px-6 text-sm text-[#52525b] font-mono uppercase tracking-widest">
-              <span className="w-1 h-1 rounded-full bg-[#ec4899] inline-block" />
+              <span className="w-1 h-1 rounded-full bg-[#ff6b6b] inline-block" />
               {tech}
             </span>
           ))}
