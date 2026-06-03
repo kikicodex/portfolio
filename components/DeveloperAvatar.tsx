@@ -56,7 +56,7 @@ export default function DeveloperAvatar() {
         style={{
           width: "380px",
           height: "520px",
-          background: "radial-gradient(ellipse at 40% 38%, rgba(255,107,107,0.32) 0%, rgba(20,184,166,0.13) 55%, transparent 78%)",
+          background: "radial-gradient(ellipse at 40% 38%, rgba(255,107,107,0.32) 0%, rgba(255,154,154,0.13) 55%, transparent 78%)",
           filter: "blur(52px)",
           top: "6%",
           left: "50%",
@@ -109,7 +109,7 @@ export default function DeveloperAvatar() {
         style={{ right: "-10%", top: "6%" }}
       >
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M9 1 L10.2 7.4 L16 9 L10.2 10.6 L9 17 L7.8 10.6 L2 9 L7.8 7.4Z" fill="#14b8a6" opacity="0.8" />
+          <path d="M9 1 L10.2 7.4 L16 9 L10.2 10.6 L9 17 L7.8 10.6 L2 9 L7.8 7.4Z" fill="#ff9a9a" opacity="0.8" />
         </svg>
       </motion.div>
       <motion.div

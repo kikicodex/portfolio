@@ -64,7 +64,7 @@ export default function Contact() {
           className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5] mb-6"
         >
           Get in{" "}
-          <span className="bg-gradient-to-r from-[#ff6b6b] to-[#14b8a6] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#ff6b6b] to-[#ff9a9a] bg-clip-text text-transparent">
             touch.
           </span>
         </motion.h2>
@@ -123,7 +123,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/keerthana-krr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#14b8a6]/50 hover:shadow-[0_0_17px_rgba(20,184,166,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#ff9a9a]/50 hover:shadow-[0_0_17px_rgba(255,154,154,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <LinkedInIcon />
             LinkedIn

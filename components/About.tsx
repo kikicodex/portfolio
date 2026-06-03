@@ -44,7 +44,7 @@ function StatCard({ value, label, delay }: { value: number; label: string; delay
       transition={{ duration: 0.5, delay: delay / 1000 }}
       className="flex flex-col items-center gap-1 p-6 rounded-2xl border border-[#1e1e1e] bg-[#111111] hover:border-[#ff6b6b]/40 transition-colors duration-300"
     >
-      <span className="font-black text-6xl bg-gradient-to-br from-[#ff6b6b] to-[#14b8a6] bg-clip-text text-transparent tabular-nums">
+      <span className="font-black text-6xl bg-gradient-to-br from-[#ff6b6b] to-[#ff9a9a] bg-clip-text text-transparent tabular-nums">
         {count}
       </span>
       <span className="text-sm text-[#71717a] font-medium text-center">{label}</span>
@@ -87,7 +87,7 @@ export default function About() {
           >
             <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
               Made with{" "}
-              <span className="bg-gradient-to-r from-[#ff6b6b] to-[#14b8a6] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#ff6b6b] to-[#ff9a9a] bg-clip-text text-transparent">
                 intent.
               </span>
             </h2>

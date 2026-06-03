@@ -90,7 +90,7 @@ export default function Hero() {
     >
       <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
       <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#ff6b6b]/[0.065] blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#14b8a6]/[0.05] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#ff9a9a]/[0.05] blur-[100px] pointer-events-none" />
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
 
       {/* Avatar — desktop only, absolute so it doesn't affect text centering */}
@@ -134,7 +134,7 @@ export default function Hero() {
             {/* Role — gradient accent */}
             <motion.p
               {...fade(0.45)}
-              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#ffb3b3] to-[#2dd4bf] bg-clip-text text-transparent leading-snug -mt-1"
+              className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#ffb3b3] to-[#ffb3b3] bg-clip-text text-transparent leading-snug -mt-1"
             >
               Computer Science Engineer
             </motion.p>

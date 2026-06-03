@@ -44,7 +44,7 @@ export default function Image() {
             width: 360,
             height: 360,
             borderRadius: "50%",
-            background: "rgba(20,184,166,0.18)",
+            background: "rgba(255,154,154,0.18)",
             filter: "blur(90px)",
           }}
         />

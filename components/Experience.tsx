@@ -55,7 +55,7 @@ const items: TimelineItem[] = [
 
 const badgeColors: Record<string, { bg: string; text: string; border: string }> = {
   Work: { bg: "#ff6b6b12", text: "#ff8585", border: "#ff6b6b40" },
-  Education: { bg: "#14b8a612", text: "#2dd4bf", border: "#14b8a640" },
+  Education: { bg: "#ff9a9a12", text: "#ffb3b3", border: "#ff9a9a40" },
   Cert: { bg: "#f59e0b12", text: "#fbbf24", border: "#f59e0b40" },
 };
 

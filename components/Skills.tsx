@@ -21,7 +21,7 @@ const categories: SkillCategory[] = [
     name: "Frontend & Mobile",
     icon: "◻",
     skills: ["Next.js", "React", "React Native", "Expo", "Tailwind CSS", "Zustand"],
-    accent: "#14b8a6",
+    accent: "#ff9a9a",
   },
   {
     name: "Backend & DB",
@@ -33,7 +33,7 @@ const categories: SkillCategory[] = [
     name: "Cloud & DevOps",
     icon: "☁",
     skills: ["Vercel", "Railway", "Cloudinary", "Turborepo", "pnpm"],
-    accent: "#14b8a6",
+    accent: "#ff9a9a",
   },
   {
     name: "Auth & Payments",
@@ -51,7 +51,7 @@ const categories: SkillCategory[] = [
     name: "AI / ML",
     icon: "◈",
     skills: ["OpenAI GPT-4o", "NLP", "scikit-learn", "Pandas", "Streamlit"],
-    accent: "#14b8a6",
+    accent: "#ff9a9a",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#14b8a6]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#ff9a9a]/40 to-transparent" />
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">

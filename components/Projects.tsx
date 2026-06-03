@@ -37,7 +37,7 @@ const projects: Project[] = [
       "Cross-platform app (web + iOS + Android) for VTU engineering students. AI-generated answers via OpenAI GPT-4o through a secure server-side proxy, adaptive quizzes, community feed, and study analytics.",
     url: "engineerease.vercel.app",
     tags: ["Expo", "React Native", "Firebase", "OpenAI GPT-4o", "Cloudinary", "Vercel"],
-    gradient: "from-[#ff6b6b]/20 via-[#14b8a6]/10 to-[#0a0a0a]",
+    gradient: "from-[#ff6b6b]/20 via-[#ff9a9a]/10 to-[#0a0a0a]",
     accent: "#ff6b6b",
     mockLines: ["GPT-4o Powered Q&A", "iOS + Android + Web", "Adaptive Quizzes", "VTU Syllabus"],
   },
@@ -48,7 +48,7 @@ const projects: Project[] = [
     description:
       "Python-based automated tool for cleaning and standardising healthcare records. Features text standardisation, duplicate detection, blood-pressure validation, and Isolation Forest anomaly detection via a Streamlit web interface.",
     tags: ["Python", "Streamlit", "scikit-learn", "NLP", "Pandas"],
-    gradient: "from-[#10b981]/20 via-[#14b8a6]/10 to-[#0a0a0a]",
+    gradient: "from-[#10b981]/20 via-[#ff9a9a]/10 to-[#0a0a0a]",
     accent: "#10b981",
     badge: "IBM Certified",
     mockLines: ["NLP Standardisation", "Anomaly Detection", "BP Validation", "Streamlit UI"],

@@ -82,7 +82,7 @@ body {
 
 /* Timeline line */
 .timeline-line {
-  background: linear-gradient(to bottom, #ff6b6b, #14b8a6);
+  background: linear-gradient(to bottom, #ff6b6b, #ff9a9a);
 }
 
 /* Noise overlay */
