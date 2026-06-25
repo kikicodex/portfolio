@@ -77,14 +77,14 @@ export default function Navbar() {
               width={393}
               height={635}
               style={{
-                width: "44px",
-                height: "44px",
+                width: "72px",
+                height: "72px",
                 objectFit: "contain",
-                filter: "invert(1) sepia(1) saturate(5) hue-rotate(290deg) brightness(1.1)",
+                filter: "invert(1)",
                 mixBlendMode: "screen",
-                transition: "filter 0.2s, transform 0.2s",
+                transition: "transform 0.2s, filter 0.2s",
               }}
-              className="group-hover:scale-110 group-hover:brightness-125"
+              className="group-hover:scale-110"
             />
           </a>
 
