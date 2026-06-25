@@ -75,7 +75,7 @@ export default function Contact() {
           transition={{ delay: 0.2 }}
           className="text-[#a1a1aa] text-lg max-w-xl mx-auto leading-relaxed mb-12"
         >
-          Open to full-stack, AI engineering, and cybersecurity roles — based in Bangalore.
+          Open to product management and associate PM roles — based in Bangalore.
         </motion.p>
 
         {/* Email CTA */}

@@ -109,22 +109,20 @@ export default function About() {
           >
             <p className="text-[#a1a1aa] text-lg leading-[1.85] font-light">
               <span className="text-[#f5f5f5] font-medium">CS grad</span>{" "}
-              from VTU Bangalore. I&apos;ve built a
-              B2C hardware marketplace, a cross-platform AI study app, and a healthcare data tool —
-              all solo, all live in production.
+              from VTU Bangalore. I launched an AI-powered study app solo — end-to-end, from problem
+              definition to a live product on web, iOS, and Android.
             </p>
             <p className="text-[#a1a1aa] text-lg leading-[1.85] font-light">
-              I care about{" "}
-              <span className="text-[#f5f5f5] font-medium">security</span>,{" "}
-              <span className="text-[#f5f5f5] font-medium">performance</span>, and{" "}
-              <span className="text-[#f5f5f5] font-medium">craft</span>. Security isn&apos;t an
-              afterthought in my work — it&apos;s a design constraint. I&apos;m currently pushing
-              toward CompTIA Security+ to formalise what I already practice.
+              I think in{" "}
+              <span className="text-[#f5f5f5] font-medium">user flows</span>,{" "}
+              <span className="text-[#f5f5f5] font-medium">trade-offs</span>, and{" "}
+              <span className="text-[#f5f5f5] font-medium">priorities</span>. Technical enough to
+              build it myself — product-minded enough to know what not to build.
             </p>
 
             {/* Traits */}
             <div className="flex flex-wrap gap-3 mt-2">
-              {["Full-Stack", "Mobile", "AI", "Cybersecurity"].map((t) => (
+              {["Product Strategy", "Data", "Technical Fluency", "AI"].map((t) => (
                 <span
                   key={t}
                   className="px-3 py-1.5 rounded-full text-xs font-medium border border-[#222] bg-[#111] text-[#a1a1aa]"

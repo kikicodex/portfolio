@@ -12,45 +12,27 @@ interface SkillCategory {
 
 const categories: SkillCategory[] = [
   {
-    name: "Languages",
-    icon: "{ }",
-    skills: ["JavaScript", "TypeScript", "Python", "HTML/CSS", "SQL"],
-    accent: "#8B5535",
-  },
-  {
-    name: "Frontend & Mobile",
-    icon: "◻",
-    skills: ["Next.js", "React", "React Native", "Expo", "Tailwind CSS", "Zustand"],
-    accent: "#6B3F24",
-  },
-  {
-    name: "Backend & DB",
-    icon: "⬡",
-    skills: ["Node.js", "Express.js", "MongoDB", "Firebase", "Firestore", "REST APIs"],
-    accent: "#8B5535",
-  },
-  {
-    name: "Cloud & DevOps",
-    icon: "☁",
-    skills: ["Vercel", "Railway", "Cloudinary", "Turborepo", "pnpm"],
-    accent: "#6B3F24",
-  },
-  {
-    name: "Auth & Payments",
-    icon: "⚿",
-    skills: ["Clerk", "Firebase Auth", "Razorpay", "JWT"],
-    accent: "#6B3F24",
-  },
-  {
-    name: "Security",
-    icon: "⊕",
-    skills: ["OWASP Top 10", "JWT Auth", "RBAC", "Firestore Rules", "Secret Management"],
-    accent: "#f43f5e",
-  },
-  {
-    name: "AI / ML",
+    name: "Product",
     icon: "◈",
-    skills: ["OpenAI GPT-4o", "NLP", "scikit-learn", "Pandas", "Streamlit"],
+    skills: ["PRD Writing", "Scoping & Prioritization", "Success Metrics", "User Flows", "Build-vs-Buy", "Roadmapping"],
+    accent: "#8B5535",
+  },
+  {
+    name: "Data & Analysis",
+    icon: "{ }",
+    skills: ["SQL", "Python", "Pandas", "Hypothesis Testing", "A/B Reasoning", "Data Validation"],
+    accent: "#6B3F24",
+  },
+  {
+    name: "Technical Fluency",
+    icon: "◻",
+    skills: ["JavaScript", "TypeScript", "React", "Next.js", "REST APIs", "MongoDB", "Firebase"],
+    accent: "#8B5535",
+  },
+  {
+    name: "Tools",
+    icon: "⬡",
+    skills: ["Figma", "Postman", "Vercel", "Git", "Notion"],
     accent: "#6B3F24",
   },
 ];

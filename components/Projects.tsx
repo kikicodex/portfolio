@@ -18,40 +18,40 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: "kernel",
-    title: "KERNEL",
-    subtitle: "Industrial Hardware E-Commerce Marketplace",
-    description:
-      "A full B2C marketplace for the Indian industrial hardware market. Built with a Turborepo monorepo, Next.js frontend on Vercel, Express backend on Railway, Razorpay payments, and Clerk authentication with three-tier role gating.",
-    url: "kerneltools.vercel.app",
-    tags: ["Next.js 16", "Express.js", "MongoDB", "Clerk", "Razorpay", "Turborepo", "Tailwind CSS"],
-    gradient: "from-[#ffd100]/20 via-[#f59e0b]/10 to-[#0a0a0a]",
-    accent: "#ffd100",
-    mockLines: ["B2B Hardware Marketplace", "₹ Razorpay Payments", "3-Tier Role Auth", "Turborepo Monorepo"],
-  },
-  {
     id: "engineerease",
     title: "ENGINEEREASE",
-    subtitle: "AI-Powered Study Platform for VTU Students",
+    subtitle: "Product — AI Study Platform for VTU Students",
     description:
-      "Cross-platform app (web + iOS + Android) for VTU engineering students. AI-generated answers via OpenAI GPT-4o through a secure server-side proxy, adaptive quizzes, community feed, and study analytics.",
+      "Owned end-to-end product strategy for an AI study tool serving VTU students across 39 branches and 233 subjects. Defined the core loop (photo-scan Q&A + adaptive quizzes), made the build-vs-buy call on LLM integration, and shipped v1 solo across web, iOS, and Android.",
     url: "engineerease.vercel.app",
-    tags: ["Expo", "React Native", "Firebase", "OpenAI GPT-4o", "Cloudinary", "Vercel"],
+    tags: ["Product Strategy", "PRD", "OpenAI GPT-4o", "React Native", "Firebase", "Vercel"],
     gradient: "from-[#8B5535]/20 via-[#6B3F24]/10 to-[#0a0a0a]",
     accent: "#8B5535",
-    mockLines: ["GPT-4o Powered Q&A", "iOS + Android + Web", "Adaptive Quizzes", "VTU Syllabus"],
+    mockLines: ["End-to-End PM", "39 Branches · 233 Subjects", "Build-vs-Buy Decision", "iOS + Android + Web"],
   },
   {
-    id: "healthcare",
-    title: "HEALTHCARE DATA TOOL",
-    subtitle: "Automated NLP Data Cleansing Pipeline",
+    id: "bigbasket",
+    title: "BIGBASKET PRD",
+    subtitle: "Product Case Study — Quick Commerce Strategy",
     description:
-      "Python-based automated tool for cleaning and standardising healthcare records. Features text standardisation, duplicate detection, blood-pressure validation, and Isolation Forest anomaly detection via a Streamlit web interface.",
-    tags: ["Python", "Streamlit", "scikit-learn", "NLP", "Pandas"],
-    gradient: "from-[#10b981]/20 via-[#6B3F24]/10 to-[#0a0a0a]",
-    accent: "#10b981",
-    badge: "IBM Certified",
-    mockLines: ["NLP Standardisation", "Anomaly Detection", "BP Validation", "Streamlit UI"],
+      "Wrote a full product strategy and PRD proposing a unified grocery-plus-pharmacy quick-commerce funnel for BigBasket. Covered problem framing, competitive moat, user personas, success metrics, an illustrative API contract, and the regulatory risk of merging Rx with grocery fulfilment.",
+    tags: ["PRD Writing", "Competitive Analysis", "User Personas", "Success Metrics", "API Design"],
+    gradient: "from-[#f59e0b]/20 via-[#8B5535]/10 to-[#0a0a0a]",
+    accent: "#f59e0b",
+    badge: "Case Study",
+    mockLines: ["Problem Framing", "Competitive Moat", "Success Metrics", "Regulatory Risk"],
+  },
+  {
+    id: "kernel",
+    title: "KERNEL",
+    subtitle: "Technical — Industrial Hardware Marketplace",
+    description:
+      "A full B2C marketplace for the Indian industrial hardware market. Demonstrates technical fluency: Turborepo monorepo, Next.js frontend, Express backend, Razorpay payments, and three-tier role authentication.",
+    url: "kerneltools.vercel.app",
+    tags: ["Next.js", "Express.js", "MongoDB", "Razorpay", "Clerk", "Turborepo"],
+    gradient: "from-[#ffd100]/20 via-[#f59e0b]/10 to-[#0a0a0a]",
+    accent: "#ffd100",
+    mockLines: ["B2C Marketplace", "₹ Razorpay Payments", "3-Tier Role Auth", "Live in Production"],
   },
 ];
 

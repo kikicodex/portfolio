@@ -19,7 +19,7 @@ const items: TimelineItem[] = [
     org: "Rooman Technologies",
     period: "Sep 2024 – Feb 2025",
     description:
-      "Applied statistical analysis, hypothesis testing, and data validation pipelines to real-world datasets.",
+      "Defined data-quality criteria and built validation pipelines for downstream AI/ML use cases. Translated messy real-world data into clear conclusions and recommendations for non-technical stakeholders.",
     badge: "Work",
   },
   {
@@ -29,13 +29,6 @@ const items: TimelineItem[] = [
     period: "Graduated 2025",
     description: "CGPA: 7.1/10",
     badge: "Education",
-  },
-  {
-    type: "certification",
-    title: "CompTIA Security+ (SY0-701)",
-    org: "CompTIA",
-    period: "In Progress",
-    badge: "Cert",
   },
   {
     type: "certification",

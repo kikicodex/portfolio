@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import DeveloperAvatar from "./DeveloperAvatar";
 
 const techStack = [
-  "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
-  "Tailwind CSS", "Clerk", "Razorpay", "Firebase", "OpenAI",
-  "Python", "Vercel", "Turborepo", "Express.js", "scikit-learn",
-  "Next.js", "TypeScript", "React Native", "Node.js", "MongoDB",
-  "Tailwind CSS", "Clerk", "Razorpay", "Firebase", "OpenAI",
-  "Python", "Vercel", "Turborepo", "Express.js", "scikit-learn",
+  "Product Strategy", "PRD Writing", "Roadmapping", "User Flows", "A/B Reasoning",
+  "SQL", "Python", "Pandas", "Figma", "Data Analysis",
+  "JavaScript", "React", "Next.js", "Firebase", "MongoDB",
+  "Product Strategy", "PRD Writing", "Roadmapping", "User Flows", "A/B Reasoning",
+  "SQL", "Python", "Pandas", "Figma", "Data Analysis",
+  "JavaScript", "React", "Next.js", "Firebase", "MongoDB",
 ];
 
 const fade = (delay: number) => ({
@@ -136,7 +136,7 @@ export default function Hero() {
               {...fade(0.45)}
               className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#6B3F24] to-[#6B3F24] bg-clip-text text-transparent leading-snug -mt-1"
             >
-              Computer Science Engineer
+              Product Manager
             </motion.p>
 
             {/* Subtext */}
@@ -144,7 +144,7 @@ export default function Hero() {
               {...fade(0.62)}
               className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-md font-light"
             >
-              Building full-stack, AI-powered, and security-focused products.
+              Turning complex problems into focused, shipped products.
             </motion.p>
 
           </div>
