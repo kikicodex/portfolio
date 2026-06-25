@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import DeveloperAvatar from "./DeveloperAvatar";
 
 const techStack = [
@@ -20,9 +21,18 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a]"
     >
-      <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#E0607A]/[0.065] blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#F5A0BB]/[0.05] blur-[100px] pointer-events-none" />
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/background.png"
+          alt=""
+          fill
+          priority
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-[#0a0a0a]/80" />
+      </div>
+      <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none z-0" />
 
       {/* Avatar — desktop only, absolute right column */}
       <motion.div
