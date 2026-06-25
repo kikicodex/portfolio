@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#"
-            className="font-black text-xl tracking-tight bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent"
+            className="font-black text-xl tracking-tight text-[#a1a1aa]"
           >
             Keerthana K R
           </a>
