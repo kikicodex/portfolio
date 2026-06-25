@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { toast } from "sonner";
 import { Reveal } from "./Reveal";
 
@@ -44,10 +45,12 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-32 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent" />
-
-      {/* Big glow backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#E0607A]/[0.05] blur-[120px] pointer-events-none" />
+      {/* Batman background */}
+      <div className="absolute inset-0 z-0">
+        <Image src="/batman.png" alt="" fill priority className="object-cover object-center" />
+        <div className="absolute inset-0 bg-[#060606]/80" />
+      </div>
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent z-10" />
 
       <div ref={ref} className="relative max-w-4xl mx-auto text-center">
         <Reveal className="mb-4">
