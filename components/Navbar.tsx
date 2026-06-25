@@ -69,7 +69,7 @@ export default function Navbar() {
             href="/resume.pdf"
             download
             title="Download Resume"
-            className="hidden md:block group"
+            className="hidden md:flex items-center self-center group"
           >
             <Image
               src="/batman.png"
@@ -77,12 +77,11 @@ export default function Navbar() {
               width={393}
               height={635}
               style={{
-                width: "180px",
-                height: "180px",
-                objectFit: "contain",
+                height: "80px",
+                width: "auto",
                 filter: "invert(1)",
                 mixBlendMode: "screen",
-                transition: "transform 0.2s, filter 0.2s",
+                transition: "transform 0.2s",
               }}
               className="group-hover:scale-110"
             />
