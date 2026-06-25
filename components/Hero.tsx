@@ -109,20 +109,6 @@ export default function Hero() {
 
           {/* Text column — takes left ~54%, avatar is absolute on right */}
           <div className="lg:max-w-[54%] flex flex-col gap-5">
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex items-center gap-2 w-fit px-3 py-1.5 rounded-full border border-[#222222] bg-[#111111] text-xs text-[#a1a1aa] font-medium"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
-              </span>
-              Available for opportunities
-            </motion.div>
-
             {/* Name — big focal point */}
             <motion.h1
               {...fade(0.25)}
