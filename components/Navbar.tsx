@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 const links = [
   { label: "About", href: "#about" },
@@ -63,13 +64,28 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* CTA — batman shape download */}
           <a
             href="/resume.pdf"
             download
-            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-[#E0607A] text-white hover:bg-[#B04060] transition-colors duration-200"
+            title="Download Resume"
+            className="hidden md:block group"
           >
-            Download Resume
+            <Image
+              src="/batman.png"
+              alt="Download Resume"
+              width={393}
+              height={635}
+              style={{
+                width: "44px",
+                height: "44px",
+                objectFit: "contain",
+                filter: "invert(1) sepia(1) saturate(5) hue-rotate(290deg) brightness(1.1)",
+                mixBlendMode: "screen",
+                transition: "filter 0.2s, transform 0.2s",
+              }}
+              className="group-hover:scale-110 group-hover:brightness-125"
+            />
           </a>
 
           {/* Mobile menu button */}
