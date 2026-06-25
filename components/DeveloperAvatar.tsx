@@ -72,15 +72,15 @@ export default function DeveloperAvatar() {
         className="relative"
       >
         <Image
-          src="/avatarminecraft.png"
+          src="/catwoman.png"
           alt="Keerthana — developer avatar"
-          width={500}
-          height={500}
+          width={375}
+          height={666}
           priority
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
           style={{
-            width: "min(85vw, 480px)",
+            width: "min(70vw, 380px)",
             height: "auto",
             objectFit: "contain",
             transform: `translate(${shift.x}px, ${shift.y}px)`,
