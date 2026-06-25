@@ -27,8 +27,8 @@ body {
   -moz-osx-font-smoothing: none;
 }
 
-/* Minecraft pixel font for section headings only — not h1 (hero name) */
-h2, h3 {
+/* Minecraft pixel font for all headings */
+h1, h2, h3 {
   font-family: var(--font-minecraft), monospace !important;
   line-height: 1.6 !important;
   letter-spacing: 0.02em;
