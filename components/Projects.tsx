@@ -10,6 +10,8 @@ interface Project {
   subtitle: string;
   description: string;
   url?: string;
+  href?: string;
+  linkLabel?: string;
   tags: string[];
   gradient: string;
   accent: string;
@@ -36,6 +38,8 @@ const projects: Project[] = [
     subtitle: "Product Case Study — Quick Commerce Strategy",
     description:
       "Wrote a full product strategy and PRD proposing a unified grocery-plus-pharmacy quick-commerce funnel for BigBasket. Covered problem framing, competitive moat, user personas, success metrics, an illustrative API contract, and the regulatory risk of merging Rx with grocery fulfilment.",
+    href: "https://docs.google.com/document/d/11TY-_pG_n1IUfDRA2IjxvfiyAolYcA1ArE2b_dt5ZBA/edit?usp=sharing",
+    linkLabel: "Read Case Study",
     tags: ["PRD Writing", "Competitive Analysis", "User Personas", "Success Metrics", "API Design"],
     gradient: "from-[#f59e0b]/20 via-[#5BAD52]/10 to-[#0a0a0a]",
     accent: "#f59e0b",
@@ -178,15 +182,15 @@ function ProjectTiltCard({
         </div>
 
         {/* Link */}
-        {project.url && (
+        {(project.url || project.href) && (
           <a
-            href={`https://${project.url}`}
+            href={project.href ?? `https://${project.url}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold mt-2 group"
             style={{ color: project.accent }}
           >
-            View Live
+            {project.linkLabel ?? "View Live"}
             <svg
               className="w-4 h-4 group-hover:translate-x-1 transition-transform"
               fill="none"
