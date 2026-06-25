@@ -31,7 +31,7 @@ export default function Image() {
             width: 560,
             height: 560,
             borderRadius: "50%",
-            background: "rgba(91,173,82,0.28)",
+            background: "rgba(224,96,122,0.28)",
             filter: "blur(110px)",
           }}
         />
@@ -44,7 +44,7 @@ export default function Image() {
             width: 360,
             height: 360,
             borderRadius: "50%",
-            background: "rgba(74,239,239,0.18)",
+            background: "rgba(245,160,187,0.18)",
             filter: "blur(90px)",
           }}
         />
@@ -54,7 +54,7 @@ export default function Image() {
           <span
             style={{
               fontSize: 18,
-              color: "#5BAD52",
+              color: "#E0607A",
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               fontWeight: 500,
@@ -96,8 +96,8 @@ export default function Image() {
                 style={{
                   padding: "8px 20px",
                   borderRadius: 24,
-                  border: "1px solid rgba(91,173,82,0.45)",
-                  color: "#4AEFEF",
+                  border: "1px solid rgba(224,96,122,0.45)",
+                  color: "#F5A0BB",
                   fontSize: 20,
                   fontWeight: 500,
                 }}

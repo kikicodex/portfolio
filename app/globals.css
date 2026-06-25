@@ -42,30 +42,30 @@ h1, h2, h3 {
   background: #1a1a1a;
 }
 ::-webkit-scrollbar-thumb {
-  background: #5BAD52;
+  background: #E0607A;
   border-radius: 0;
 }
 
 /* Selection */
 ::selection {
-  background: rgba(91, 173, 82, 0.4);
+  background: rgba(224, 96, 122, 0.4);
   color: #f5f5f5;
 }
 
 /* Pixel grid background */
 .bg-grid {
   background-image:
-    linear-gradient(rgba(91, 173, 82, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91, 173, 82, 0.07) 1px, transparent 1px);
+    linear-gradient(rgba(224, 96, 122, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(224, 96, 122, 0.07) 1px, transparent 1px);
   background-size: 32px 32px;
 }
 
 /* Glow utilities */
 .glow-green {
-  box-shadow: 0 0 40px rgba(91, 173, 82, 0.3);
+  box-shadow: 0 0 40px rgba(224, 96, 122, 0.3);
 }
 .glow-diamond {
-  box-shadow: 0 0 40px rgba(74, 239, 239, 0.25);
+  box-shadow: 0 0 40px rgba(245, 160, 187, 0.25);
 }
 
 /* Skill tag */
@@ -76,14 +76,14 @@ h1, h2, h3 {
   image-rendering: pixelated;
 }
 .skill-tag:hover {
-  border-color: #5BAD52;
-  box-shadow: 0 0 12px rgba(91, 173, 82, 0.4);
+  border-color: #E0607A;
+  box-shadow: 0 0 12px rgba(224, 96, 122, 0.4);
   color: #f5f5f5;
 }
 
 /* Timeline line */
 .timeline-line {
-  background: linear-gradient(to bottom, #5BAD52, #4AEFEF);
+  background: linear-gradient(to bottom, #E0607A, #F5A0BB);
 }
 
 /* Minecraft 3D button feel */

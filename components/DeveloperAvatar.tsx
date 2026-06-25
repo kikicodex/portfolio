@@ -56,7 +56,7 @@ export default function DeveloperAvatar() {
         style={{
           width: "380px",
           height: "520px",
-          background: "radial-gradient(ellipse at 40% 38%, rgba(91,173,82,0.32) 0%, rgba(74,239,239,0.13) 55%, transparent 78%)",
+          background: "radial-gradient(ellipse at 40% 38%, rgba(224,96,122,0.32) 0%, rgba(245,160,187,0.13) 55%, transparent 78%)",
           filter: "blur(52px)",
           top: "6%",
           left: "50%",

@@ -43,9 +43,9 @@ function StatCard({ value, label, delay }: { value: number; label: string; delay
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: delay / 1000 }}
-      className="flex flex-col items-center gap-1 p-6 rounded-none border border-[#1e1e1e] bg-[#111111] hover:border-[#5BAD52]/40 transition-colors duration-300"
+      className="flex flex-col items-center gap-1 p-6 rounded-none border border-[#1e1e1e] bg-[#111111] hover:border-[#E0607A]/40 transition-colors duration-300"
     >
-      <span className="font-black text-6xl bg-gradient-to-br from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent tabular-nums">
+      <span className="font-black text-6xl bg-gradient-to-br from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent tabular-nums">
         {count}
       </span>
       <span className="text-sm text-[#71717a] font-medium text-center">{label}</span>
@@ -66,12 +66,12 @@ export default function About() {
   return (
     <section id="about" ref={sectionRef} className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
       {/* Subtle separator line */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         {/* Section label */}
         <Reveal className="mb-4">
-          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#E0607A]">
             01 — About
           </p>
         </Reveal>
@@ -82,7 +82,7 @@ export default function About() {
             <Reveal>
               <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
                 Made with{" "}
-                <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent">
                   intent.
                 </span>
               </h2>

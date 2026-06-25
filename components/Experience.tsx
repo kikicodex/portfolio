@@ -48,8 +48,8 @@ const items: TimelineItem[] = [
 ];
 
 const badgeColors: Record<string, { bg: string; text: string; border: string }> = {
-  Work: { bg: "#5BAD5212", text: "#7A4428", border: "#5BAD5240" },
-  Education: { bg: "#4AEFEF12", text: "#4AEFEF", border: "#4AEFEF40" },
+  Work: { bg: "#E0607A12", text: "#B04060", border: "#E0607A40" },
+  Education: { bg: "#F5A0BB12", text: "#F5A0BB", border: "#F5A0BB40" },
   Cert: { bg: "#f59e0b12", text: "#fbbf24", border: "#f59e0b40" },
 };
 
@@ -68,17 +68,17 @@ function TimelineCard({ item, index }: { item: TimelineItem; index: number }) {
     >
       {/* Dot on the line */}
       <div
-        className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 border-[#5BAD52] bg-[#0a0a0a] z-10 flex items-center justify-center"
+        className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-2 border-[#E0607A] bg-[#0a0a0a] z-10 flex items-center justify-center"
       >
-        <div className="w-1.5 h-1.5 rounded-full bg-[#5BAD52]" />
+        <div className="w-1.5 h-1.5 rounded-full bg-[#E0607A]" />
       </div>
 
       {/* Card */}
-      <div className="group p-5 rounded-none border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#5BAD52]/30 transition-all duration-300">
+      <div className="group p-5 rounded-none border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#E0607A]/30 transition-all duration-300">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
             <h3 className="font-bold text-[#f5f5f5] text-base leading-snug">{item.title}</h3>
-            <p className="text-[#5BAD52] text-sm font-medium mt-0.5">{item.org}</p>
+            <p className="text-[#E0607A] text-sm font-medium mt-0.5">{item.org}</p>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
             {item.badge && (
@@ -103,12 +103,12 @@ function TimelineCard({ item, index }: { item: TimelineItem; index: number }) {
 export default function Experience() {
   return (
     <section id="experience" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent" />
 
       <div className="max-w-3xl mx-auto">
         <div className="mb-16">
           <Reveal className="mb-4">
-            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#E0607A]">
               04 — Experience & Education
             </p>
           </Reveal>
@@ -122,7 +122,7 @@ export default function Experience() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#5BAD52] via-[#5BAD52]/40 to-transparent" />
+          <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-[#E0607A] via-[#E0607A]/40 to-transparent" />
 
           <div className="flex flex-col gap-6">
             {items.map((item, i) => (

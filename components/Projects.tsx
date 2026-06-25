@@ -28,8 +28,8 @@ const projects: Project[] = [
       "Owned end-to-end product strategy for an AI study tool serving VTU students across 39 branches and 233 subjects. Defined the core loop (photo-scan Q&A + adaptive quizzes), made the build-vs-buy call on LLM integration, and shipped v1 solo across web, iOS, and Android.",
     url: "engineerease.vercel.app",
     tags: ["Product Strategy", "PRD", "OpenAI GPT-4o", "React Native", "Firebase", "Vercel"],
-    gradient: "from-[#5BAD52]/20 via-[#4AEFEF]/10 to-[#0a0a0a]",
-    accent: "#5BAD52",
+    gradient: "from-[#E0607A]/20 via-[#F5A0BB]/10 to-[#0a0a0a]",
+    accent: "#E0607A",
     mockLines: ["End-to-End PM", "39 Branches · 233 Subjects", "Build-vs-Buy Decision", "iOS + Android + Web"],
   },
   {
@@ -41,7 +41,7 @@ const projects: Project[] = [
     href: "https://docs.google.com/document/d/11TY-_pG_n1IUfDRA2IjxvfiyAolYcA1ArE2b_dt5ZBA/edit?usp=sharing",
     linkLabel: "Read Case Study",
     tags: ["PRD Writing", "Competitive Analysis", "User Personas", "Success Metrics", "API Design"],
-    gradient: "from-[#f59e0b]/20 via-[#5BAD52]/10 to-[#0a0a0a]",
+    gradient: "from-[#f59e0b]/20 via-[#E0607A]/10 to-[#0a0a0a]",
     accent: "#f59e0b",
     badge: "Case Study",
     mockLines: ["Problem Framing", "Competitive Moat", "Success Metrics", "Regulatory Risk"],
@@ -165,7 +165,7 @@ function ProjectTiltCard({
           {project.title}
         </h3>
 
-        <p className="text-[#5BAD52] font-semibold text-base">{project.subtitle}</p>
+        <p className="text-[#E0607A] font-semibold text-base">{project.subtitle}</p>
 
         <p className="text-[#a1a1aa] text-base leading-relaxed font-light">{project.description}</p>
 
@@ -174,7 +174,7 @@ function ProjectTiltCard({
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-1 rounded-none text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#5BAD52]/50 transition-all duration-200"
+              className="px-2.5 py-1 rounded-none text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#E0607A]/50 transition-all duration-200"
             >
               {tag}
             </span>
@@ -209,12 +209,12 @@ function ProjectTiltCard({
 export default function Projects() {
   return (
     <section id="projects" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <Reveal className="mb-4">
-            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#E0607A]">
               02 — Projects
             </p>
           </Reveal>

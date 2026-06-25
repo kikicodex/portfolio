@@ -44,14 +44,14 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative py-32 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent" />
 
       {/* Big glow backdrop */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#5BAD52]/[0.05] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#E0607A]/[0.05] blur-[120px] pointer-events-none" />
 
       <div ref={ref} className="relative max-w-4xl mx-auto text-center">
         <Reveal className="mb-4">
-          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#E0607A]">
             05 — Contact
           </p>
         </Reveal>
@@ -59,7 +59,7 @@ export default function Contact() {
         <Reveal delay={0.1} className="mb-6">
           <h2 className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]">
             Get in{" "}
-            <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent">
               touch.
             </span>
           </h2>
@@ -80,7 +80,7 @@ export default function Contact() {
         >
           <button
             onClick={handleCopyEmail}
-            className="group flex items-center gap-3 px-8 py-4 rounded-none font-semibold text-base bg-[#5BAD52] text-white hover:bg-[#7A4428] transition-all duration-200 hover:shadow-[0_0_34px_rgba(91,173,82,0.34)] active:scale-95"
+            className="group flex items-center gap-3 px-8 py-4 rounded-none font-semibold text-base bg-[#E0607A] text-white hover:bg-[#B04060] transition-all duration-200 hover:shadow-[0_0_34px_rgba(224,96,122,0.34)] active:scale-95"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
@@ -107,7 +107,7 @@ export default function Contact() {
             href="https://github.com/kikicodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#5BAD52]/50 hover:shadow-[0_0_17px_rgba(91,173,82,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#E0607A]/50 hover:shadow-[0_0_17px_rgba(224,96,122,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <GitHubIcon />
             GitHub
@@ -116,7 +116,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/keerthana-krr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#4AEFEF]/50 hover:shadow-[0_0_17px_rgba(74,239,239,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#F5A0BB]/50 hover:shadow-[0_0_17px_rgba(245,160,187,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <LinkedInIcon />
             LinkedIn
@@ -132,7 +132,7 @@ export default function Contact() {
         >
           <p className="text-xs text-[#3f3f46] font-mono">
             Designed &amp; built by{" "}
-            <span className="text-[#5BAD52]">Keerthana K R</span>
+            <span className="text-[#E0607A]">Keerthana K R</span>
           </p>
         </motion.div>
       </div>

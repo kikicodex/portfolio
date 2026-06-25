@@ -21,8 +21,8 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a]"
     >
       <div className="absolute inset-0 bg-grid opacity-100 pointer-events-none" />
-      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#5BAD52]/[0.065] blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#4AEFEF]/[0.05] blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[600px] h-[600px] rounded-full bg-[#E0607A]/[0.065] blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-[400px] h-[400px] rounded-full bg-[#F5A0BB]/[0.05] blur-[100px] pointer-events-none" />
 
       {/* Avatar — desktop only, absolute right column */}
       <motion.div
@@ -57,7 +57,7 @@ export default function Hero() {
                 initial={{ y: "105%" }}
                 animate={{ y: "0%" }}
                 transition={{ duration: 0.9, delay: 0.26, ease }}
-                className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent leading-snug -mt-1"
+                className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent leading-snug -mt-1"
               >
                 Product Manager
               </motion.p>
@@ -98,13 +98,13 @@ export default function Hero() {
           <div className="lg:max-w-[54%] flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-none font-semibold text-sm bg-[#5BAD52] text-white hover:bg-[#7A4428] transition-all duration-200 hover:shadow-[0_0_20px_rgba(91,173,82,0.43)]"
+              className="px-6 py-3 rounded-none font-semibold text-sm bg-[#E0607A] text-white hover:bg-[#B04060] transition-all duration-200 hover:shadow-[0_0_20px_rgba(224,96,122,0.43)]"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="px-6 py-3 rounded-none font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#5BAD52] hover:text-[#5BAD52] transition-all duration-200"
+              className="px-6 py-3 rounded-none font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#E0607A] hover:text-[#E0607A] transition-all duration-200"
             >
               Get In Touch
             </a>
@@ -117,7 +117,7 @@ export default function Hero() {
         <div className="flex gap-0 items-center whitespace-nowrap w-max animate-marquee">
           {techStack.map((tech, i) => (
             <span key={i} className="inline-flex items-center gap-3 px-6 text-sm text-[#52525b] font-mono uppercase tracking-widest">
-              <span className="w-1 h-1 rounded-full bg-[#5BAD52] inline-block" />
+              <span className="w-1 h-1 rounded-full bg-[#E0607A] inline-block" />
               {tech}
             </span>
           ))}

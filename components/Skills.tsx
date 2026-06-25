@@ -16,25 +16,25 @@ const categories: SkillCategory[] = [
     name: "Product",
     icon: "◈",
     skills: ["PRD Writing", "Scoping & Prioritization", "Success Metrics", "User Flows", "Build-vs-Buy", "Roadmapping"],
-    accent: "#5BAD52",
+    accent: "#E0607A",
   },
   {
     name: "Data & Analysis",
     icon: "{ }",
     skills: ["SQL", "Python", "Pandas", "Hypothesis Testing", "A/B Reasoning", "Data Validation"],
-    accent: "#4AEFEF",
+    accent: "#F5A0BB",
   },
   {
     name: "Technical Fluency",
     icon: "◻",
     skills: ["JavaScript", "TypeScript", "React", "Next.js", "REST APIs", "MongoDB", "Firebase"],
-    accent: "#5BAD52",
+    accent: "#E0607A",
   },
   {
     name: "Tools",
     icon: "⬡",
     skills: ["Figma", "Postman", "Vercel", "Git", "Notion"],
-    accent: "#4AEFEF",
+    accent: "#F5A0BB",
   },
 ];
 
@@ -107,13 +107,13 @@ function CategoryBlock({ cat, index }: { cat: SkillCategory; index: number }) {
 export default function Skills() {
   return (
     <section id="skills" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#4AEFEF]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#F5A0BB]/40 to-transparent" />
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">
         <div className="mb-16">
           <Reveal className="mb-4">
-            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#E0607A]">
               03 — Skills
             </p>
           </Reveal>
