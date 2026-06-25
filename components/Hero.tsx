@@ -108,7 +108,7 @@ export default function Hero() {
           <div className="lg:max-w-[54%] flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="px-6 py-3 rounded-none font-semibold text-sm bg-[#E0607A] text-white hover:bg-[#B04060] transition-all duration-200 hover:shadow-[0_0_20px_rgba(224,96,122,0.43)]"
+              className="px-6 py-3 rounded-none font-semibold text-sm border border-[#333] text-[#f5f5f5] hover:border-[#E0607A] hover:text-[#E0607A] transition-all duration-200"
             >
               View My Work
             </a>
