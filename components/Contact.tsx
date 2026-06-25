@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { toast } from "sonner";
+import { Reveal } from "./Reveal";
 
 function GitHubIcon() {
   return (
@@ -49,34 +50,26 @@ export default function Contact() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full bg-[#5BAD52]/[0.05] blur-[120px] pointer-events-none" />
 
       <div ref={ref} className="relative max-w-4xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
-        >
-          05 — Contact
-        </motion.p>
+        <Reveal className="mb-4">
+          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+            05 — Contact
+          </p>
+        </Reveal>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.1 }}
-          className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5] mb-6"
-        >
-          Get in{" "}
-          <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
-            touch.
-          </span>
-        </motion.h2>
+        <Reveal delay={0.1} className="mb-6">
+          <h2 className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]">
+            Get in{" "}
+            <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
+              touch.
+            </span>
+          </h2>
+        </Reveal>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.2 }}
-          className="text-[#a1a1aa] text-lg max-w-xl mx-auto leading-relaxed mb-12"
-        >
-          Open to product management and associate PM roles — based in Bangalore.
-        </motion.p>
+        <Reveal delay={0.2} className="mb-12">
+          <p className="text-[#a1a1aa] text-lg max-w-xl mx-auto leading-relaxed">
+            Open to product management and associate PM roles — based in Bangalore.
+          </p>
+        </Reveal>
 
         {/* Email CTA */}
         <motion.div

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { Reveal } from "./Reveal";
 
 function useAnimatedCounter(target: number, duration = 1800) {
   const [count, setCount] = useState(0);
@@ -69,28 +70,23 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto">
         {/* Section label */}
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5 }}
-          className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
-        >
-          01 — About
-        </motion.p>
+        <Reveal className="mb-4">
+          <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+            01 — About
+          </p>
+        </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           {/* Left: Bold statement */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.1 }}
-          >
-            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
-              Made with{" "}
-              <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
-                intent.
-              </span>
-            </h2>
+          <div>
+            <Reveal>
+              <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+                Made with{" "}
+                <span className="bg-gradient-to-r from-[#5BAD52] to-[#4AEFEF] bg-clip-text text-transparent">
+                  intent.
+                </span>
+              </h2>
+            </Reveal>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 mt-12">
@@ -98,12 +94,12 @@ export default function About() {
                 <StatCard key={s.label} value={s.value} label={s.label} delay={i * 200} />
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Personality */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.7, delay: 0.2 }}
             className="flex flex-col gap-8"
           >

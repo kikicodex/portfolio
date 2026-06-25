@@ -89,40 +89,6 @@ export default function DeveloperAvatar() {
           draggable={false}
         />
       </motion.div>
-
-
-      {/* Sparkles */}
-      <motion.div
-        animate={{ opacity: [0, 1, 0], scale: [0.6, 1.1, 0.6] }}
-        transition={{ duration: 2.4, repeat: Infinity, delay: 0.4 }}
-        className="absolute pointer-events-none"
-        style={{ left: "-18%", top: "12%" }}
-      >
-        <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-          <path d="M11 1 L12.5 9 L20 11 L12.5 13 L11 21 L9.5 13 L2 11 L9.5 9Z" fill="#5BAD52" opacity="0.85" />
-        </svg>
-      </motion.div>
-      <motion.div
-        animate={{ opacity: [0, 1, 0], scale: [0.6, 1.1, 0.6] }}
-        transition={{ duration: 3, repeat: Infinity, delay: 1.3 }}
-        className="absolute pointer-events-none"
-        style={{ right: "-10%", top: "6%" }}
-      >
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-          <path d="M9 1 L10.2 7.4 L16 9 L10.2 10.6 L9 17 L7.8 10.6 L2 9 L7.8 7.4Z" fill="#4AEFEF" opacity="0.8" />
-        </svg>
-      </motion.div>
-      <motion.div
-        animate={{ opacity: [0, 1, 0] }}
-        transition={{ duration: 2.8, repeat: Infinity, delay: 0.9 }}
-        className="absolute pointer-events-none"
-        style={{ right: "-6%", bottom: "18%" }}
-      >
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <circle cx="7" cy="7" r="5" fill="#5BAD52" opacity="0.4" />
-          <circle cx="7" cy="7" r="2.5" fill="#7A4428" opacity="0.65" />
-        </svg>
-      </motion.div>
     </div>
   );
 }

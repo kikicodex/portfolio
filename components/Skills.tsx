@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Reveal } from "./Reveal";
 
 interface SkillCategory {
   name: string;
@@ -104,31 +105,23 @@ function CategoryBlock({ cat, index }: { cat: SkillCategory; index: number }) {
 }
 
 export default function Skills() {
-  const headerRef = useRef(null);
-  const inView = useInView(headerRef, { once: true });
-
   return (
     <section id="skills" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#060606]">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#4AEFEF]/40 to-transparent" />
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">
-        <div ref={headerRef} className="mb-16">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
-          >
-            03 — Skills
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.1 }}
-            className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
-          >
-            What I work with
-          </motion.h2>
+        <div className="mb-16">
+          <Reveal className="mb-4">
+            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+              03 — Skills
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+              What I work with
+            </h2>
+          </Reveal>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">

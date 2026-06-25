@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { Reveal } from "./Reveal";
 
 interface Project {
   id: string;
@@ -202,30 +203,22 @@ function ProjectTiltCard({
 }
 
 export default function Projects() {
-  const headerRef = useRef(null);
-  const headerInView = useInView(headerRef, { once: true });
-
   return (
     <section id="projects" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
-        <div ref={headerRef} className="mb-16">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
-          >
-            02 — Projects
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 24 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ delay: 0.1 }}
-            className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]"
-          >
-            My work
-          </motion.h2>
+        <div className="mb-16">
+          <Reveal className="mb-4">
+            <p className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52]">
+              02 — Projects
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+              My work
+            </h2>
+          </Reveal>
         </div>
 
         <div className="flex flex-col gap-28">
