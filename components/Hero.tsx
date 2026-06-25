@@ -56,7 +56,7 @@ export default function Hero() {
                 initial={{ y: "105%" }}
                 animate={{ y: "0%" }}
                 transition={{ duration: 1, delay: 0.1, ease }}
-                className="font-black text-[clamp(1.4rem,2.6vw,2.5rem)] leading-[1.6] tracking-tight text-[#f5f5f5] whitespace-nowrap"
+                className="font-black text-[clamp(2rem,2.6vw,2.5rem)] leading-[1.6] tracking-tight text-[#f5f5f5]"
               >
                 Keerthana K R
               </motion.h1>

@@ -80,7 +80,7 @@ export default function DeveloperAvatar() {
           sizes="(max-width: 1023px) 85vw, 45vw"
           className="select-none"
           style={{
-            width: "min(70vw, 380px)",
+            width: "min(60vw, 380px)",
             height: "auto",
             objectFit: "contain",
             transform: `translate(${shift.x}px, ${shift.y}px)`,

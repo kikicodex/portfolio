@@ -71,7 +71,7 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1} className="mb-6">
-          <h2 className="font-black text-[clamp(3rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]">
+          <h2 className="font-black text-[clamp(2rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]">
             Get in{" "}
             <span className="bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent">
               touch.
