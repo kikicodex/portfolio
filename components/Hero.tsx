@@ -59,7 +59,7 @@ export default function Hero() {
                 transition={{ duration: 0.9, delay: 0.26, ease }}
                 className="font-semibold text-[clamp(1rem,1.8vw,1.45rem)] bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent leading-snug -mt-1"
               >
-                Product Manager
+                Technical Product Manager
               </motion.p>
             </div>
 
@@ -70,7 +70,7 @@ export default function Hero() {
                 transition={{ duration: 0.9, delay: 0.38, ease }}
                 className="text-[#a1a1aa] text-base md:text-lg leading-relaxed max-w-md font-light"
               >
-                Turning complex problems into focused, shipped products.
+                Engineer-designer turning complex problems into functional, beautiful products — concept to launch.
               </motion.p>
             </div>
           </div>
