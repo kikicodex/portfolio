@@ -48,7 +48,18 @@ export default function Contact() {
       {/* Batman background */}
       <div className="absolute inset-0 z-0">
         <Image src="/batman.png" alt="" fill priority className="object-cover object-center" />
-        <div className="absolute inset-0 bg-[#060606]/80" />
+        {/* Dark overlay — slightly lighter so logo is visible */}
+        <div className="absolute inset-0 bg-[#060606]/75" />
+        {/* Underlight: wide rose glow rising from the floor */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: [
+              "radial-gradient(ellipse 80% 50% at 50% 100%, rgba(224,96,122,0.55) 0%, rgba(224,96,122,0.18) 50%, transparent 75%)",
+              "radial-gradient(ellipse 35% 22% at 50% 100%, rgba(255,200,220,0.45) 0%, transparent 55%)",
+            ].join(", "),
+          }}
+        />
       </div>
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#E0607A]/40 to-transparent z-10" />
 
