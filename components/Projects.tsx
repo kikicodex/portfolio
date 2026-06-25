@@ -41,18 +41,6 @@ const projects: Project[] = [
     badge: "Case Study",
     mockLines: ["Problem Framing", "Competitive Moat", "Success Metrics", "Regulatory Risk"],
   },
-  {
-    id: "kernel",
-    title: "KERNEL",
-    subtitle: "Technical — Industrial Hardware Marketplace",
-    description:
-      "A full B2C marketplace for the Indian industrial hardware market. Demonstrates technical fluency: Turborepo monorepo, Next.js frontend, Express backend, Razorpay payments, and three-tier role authentication.",
-    url: "kerneltools.vercel.app",
-    tags: ["Next.js", "Express.js", "MongoDB", "Razorpay", "Clerk", "Turborepo"],
-    gradient: "from-[#ffd100]/20 via-[#f59e0b]/10 to-[#0a0a0a]",
-    accent: "#ffd100",
-    mockLines: ["B2C Marketplace", "₹ Razorpay Payments", "3-Tier Role Auth", "Live in Production"],
-  },
 ];
 
 function MockBrowser({ project, inView }: { project: Project; inView: boolean }) {
