@@ -15,25 +15,25 @@ const categories: SkillCategory[] = [
     name: "Product",
     icon: "◈",
     skills: ["PRD Writing", "Scoping & Prioritization", "Success Metrics", "User Flows", "Build-vs-Buy", "Roadmapping"],
-    accent: "#8B5535",
+    accent: "#5BAD52",
   },
   {
     name: "Data & Analysis",
     icon: "{ }",
     skills: ["SQL", "Python", "Pandas", "Hypothesis Testing", "A/B Reasoning", "Data Validation"],
-    accent: "#6B3F24",
+    accent: "#4AEFEF",
   },
   {
     name: "Technical Fluency",
     icon: "◻",
     skills: ["JavaScript", "TypeScript", "React", "Next.js", "REST APIs", "MongoDB", "Firebase"],
-    accent: "#8B5535",
+    accent: "#5BAD52",
   },
   {
     name: "Tools",
     icon: "⬡",
     skills: ["Figma", "Postman", "Vercel", "Git", "Notion"],
-    accent: "#6B3F24",
+    accent: "#4AEFEF",
   },
 ];
 
@@ -44,7 +44,7 @@ function SkillTag({ skill, accent, delay }: { skill: string; accent: string; del
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3, delay }}
       whileHover={{ scale: 1.06 }}
-      className="skill-tag inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium bg-[#111111] text-[#a1a1aa] transition-all duration-200"
+      className="skill-tag inline-flex items-center px-3 py-1.5 rounded-none text-xs font-medium bg-[#111111] text-[#a1a1aa] transition-all duration-200"
       style={
         {
           "--accent": accent,
@@ -76,7 +76,7 @@ function CategoryBlock({ cat, index }: { cat: SkillCategory; index: number }) {
       initial={{ opacity: 0, y: 30 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.07 }}
-      className="flex flex-col gap-4 p-5 rounded-2xl border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#2a2a2a] transition-colors duration-300"
+      className="flex flex-col gap-4 p-5 rounded-none border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#2a2a2a] transition-colors duration-300"
     >
       <div className="flex items-center gap-3">
         <span
@@ -109,7 +109,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#060606]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#6B3F24]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#4AEFEF]/40 to-transparent" />
       <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto">
@@ -117,7 +117,7 @@ export default function Skills() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#8B5535] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
           >
             03 — Skills
           </motion.p>

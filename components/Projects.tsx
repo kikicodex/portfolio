@@ -25,8 +25,8 @@ const projects: Project[] = [
       "Owned end-to-end product strategy for an AI study tool serving VTU students across 39 branches and 233 subjects. Defined the core loop (photo-scan Q&A + adaptive quizzes), made the build-vs-buy call on LLM integration, and shipped v1 solo across web, iOS, and Android.",
     url: "engineerease.vercel.app",
     tags: ["Product Strategy", "PRD", "OpenAI GPT-4o", "React Native", "Firebase", "Vercel"],
-    gradient: "from-[#8B5535]/20 via-[#6B3F24]/10 to-[#0a0a0a]",
-    accent: "#8B5535",
+    gradient: "from-[#5BAD52]/20 via-[#4AEFEF]/10 to-[#0a0a0a]",
+    accent: "#5BAD52",
     mockLines: ["End-to-End PM", "39 Branches · 233 Subjects", "Build-vs-Buy Decision", "iOS + Android + Web"],
   },
   {
@@ -36,7 +36,7 @@ const projects: Project[] = [
     description:
       "Wrote a full product strategy and PRD proposing a unified grocery-plus-pharmacy quick-commerce funnel for BigBasket. Covered problem framing, competitive moat, user personas, success metrics, an illustrative API contract, and the regulatory risk of merging Rx with grocery fulfilment.",
     tags: ["PRD Writing", "Competitive Analysis", "User Personas", "Success Metrics", "API Design"],
-    gradient: "from-[#f59e0b]/20 via-[#8B5535]/10 to-[#0a0a0a]",
+    gradient: "from-[#f59e0b]/20 via-[#5BAD52]/10 to-[#0a0a0a]",
     accent: "#f59e0b",
     badge: "Case Study",
     mockLines: ["Problem Framing", "Competitive Moat", "Success Metrics", "Regulatory Risk"],
@@ -49,7 +49,7 @@ function MockBrowser({ project, inView }: { project: Project; inView: boolean })
       initial={{ opacity: 0, scale: 0.95 }}
       animate={inView ? { opacity: 1, scale: 1 } : {}}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="relative rounded-xl overflow-hidden border border-[#222] shadow-2xl"
+      className="relative rounded-none overflow-hidden border border-[#222] shadow-2xl"
       style={{ boxShadow: `0 0 60px ${project.accent}18` }}
     >
       {/* Browser chrome */}
@@ -59,7 +59,7 @@ function MockBrowser({ project, inView }: { project: Project; inView: boolean })
           <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
           <div className="w-3 h-3 rounded-full bg-[#28c840]" />
         </div>
-        <div className="flex-1 mx-4 bg-[#1e1e1e] rounded-md px-3 py-1 text-xs text-[#52525b] font-mono">
+        <div className="flex-1 mx-4 bg-[#1e1e1e] rounded-none px-3 py-1 text-xs text-[#52525b] font-mono">
           {project.url ? `https://${project.url}` : "local://app"}
         </div>
       </div>
@@ -148,7 +148,7 @@ function ProjectTiltCard({
             {String(index + 1).padStart(2, "0")}
           </span>
           {project.badge && (
-            <span className="px-2.5 py-1 rounded-full text-xs font-semibold border"
+            <span className="px-2.5 py-1 rounded-none text-xs font-semibold border"
               style={{ borderColor: project.accent + "60", color: project.accent, background: project.accent + "12" }}
             >
               {project.badge}
@@ -160,7 +160,7 @@ function ProjectTiltCard({
           {project.title}
         </h3>
 
-        <p className="text-[#8B5535] font-semibold text-base">{project.subtitle}</p>
+        <p className="text-[#5BAD52] font-semibold text-base">{project.subtitle}</p>
 
         <p className="text-[#a1a1aa] text-base leading-relaxed font-light">{project.description}</p>
 
@@ -169,7 +169,7 @@ function ProjectTiltCard({
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-1 rounded-md text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#8B5535]/50 transition-all duration-200"
+              className="px-2.5 py-1 rounded-none text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#5BAD52]/50 transition-all duration-200"
             >
               {tag}
             </span>
@@ -207,14 +207,14 @@ export default function Projects() {
 
   return (
     <section id="projects" className="relative py-28 px-6 md:px-16 lg:px-24 bg-[#0a0a0a]">
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#8B5535]/40 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#5BAD52]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto">
         <div ref={headerRef} className="mb-16">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            className="text-xs font-mono tracking-[0.2em] uppercase text-[#8B5535] mb-4"
+            className="text-xs font-mono tracking-[0.2em] uppercase text-[#5BAD52] mb-4"
           >
             02 — Projects
           </motion.p>
