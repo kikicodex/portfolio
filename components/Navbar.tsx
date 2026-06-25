@@ -77,8 +77,8 @@ export default function Navbar() {
               width={393}
               height={635}
               style={{
-                width: "72px",
-                height: "72px",
+                width: "120px",
+                height: "120px",
                 objectFit: "contain",
                 filter: "invert(1)",
                 mixBlendMode: "screen",
