@@ -23,12 +23,21 @@ export default function Hero() {
     >
       {/* Background image */}
       <div className="absolute inset-0 z-0">
+        {/* Mobile background */}
+        <Image
+          src="/background2.png"
+          alt=""
+          fill
+          priority
+          className="md:hidden object-cover object-center"
+        />
+        {/* Desktop background */}
         <Image
           src="/background.png"
           alt=""
           fill
           priority
-          className="object-cover object-center scale-150 md:scale-100"
+          className="hidden md:block object-cover object-center"
         />
         <div className="absolute inset-0 bg-[#0a0a0a]/80" />
       </div>
