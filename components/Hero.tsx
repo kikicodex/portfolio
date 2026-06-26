@@ -45,7 +45,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Main content */}
-      <div className="relative z-30 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
+      <div className="relative z-50 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
         <div className="w-full max-w-7xl mx-auto">
 
           {/* Text column — left 54%, avatar is absolute on right */}
@@ -85,24 +85,25 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Avatar — mobile only */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-            className="lg:hidden flex justify-center mt-10"
-          >
-            <DeveloperAvatar />
-          </motion.div>
         </div>
       </div>
+
+      {/* Avatar — mobile only, z-30 so gradient at z-40 overlays it */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.9, delay: 0.3 }}
+        className="lg:hidden absolute inset-x-0 top-32 flex justify-center z-30 pointer-events-none"
+      >
+        <DeveloperAvatar />
+      </motion.div>
 
       {/* CTAs */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="relative z-30 px-6 md:px-16 lg:px-24 pb-10"
+        className="relative z-50 px-6 md:px-16 lg:px-24 pb-10"
       >
         <div className="w-full max-w-7xl mx-auto">
           <div className="lg:max-w-[54%] flex flex-wrap gap-4">
@@ -123,10 +124,10 @@ export default function Hero() {
       </motion.div>
 
       {/* Bottom black fade — mobile 32%, desktop 30% */}
-      <div className="md:hidden absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-20"
+      <div className="md:hidden absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-40"
         style={{ background: "linear-gradient(to top, #000000 0%, #000000 32%, transparent 100%)" }}
       />
-      <div className="hidden md:block absolute bottom-0 inset-x-0 h-[400px] pointer-events-none z-20"
+      <div className="hidden md:block absolute bottom-0 inset-x-0 h-[400px] pointer-events-none z-40"
         style={{ background: "linear-gradient(to top, #000000 0%, #000000 18%, transparent 100%)" }}
       />
 
