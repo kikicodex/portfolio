@@ -126,8 +126,8 @@ export default function Hero() {
       <div className="md:hidden absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-20"
         style={{ background: "linear-gradient(to top, #000000 0%, #000000 32%, transparent 100%)" }}
       />
-      <div className="hidden md:block absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-20"
-        style={{ background: "linear-gradient(to top, #000000 0%, #000000 30%, transparent 100%)" }}
+      <div className="hidden md:block absolute bottom-0 inset-x-0 h-[700px] pointer-events-none z-20"
+        style={{ background: "linear-gradient(to top, #000000 0%, #000000 55%, transparent 100%)" }}
       />
 
       {/* Tech marquee */}
