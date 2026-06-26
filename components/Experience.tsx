@@ -77,7 +77,7 @@ function TimelineCard({ item, index }: { item: TimelineItem; index: number }) {
       <div className="group p-5 rounded-none border border-[#1a1a1a] bg-[#0f0f0f] hover:border-[#E0607A]/30 transition-all duration-300">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
-            <h3 className="font-bold text-[#f5f5f5]/55 text-base leading-snug">{item.title}</h3>
+            <h3 className="font-bold text-[#f5f5f5] text-base leading-snug">{item.title}</h3>
             <p className="text-[#E0607A] text-sm font-medium mt-0.5">{item.org}</p>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
@@ -113,7 +113,7 @@ export default function Experience() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]/55">
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
               The journey so far
             </h2>
           </Reveal>

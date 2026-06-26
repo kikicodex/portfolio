@@ -71,7 +71,7 @@ export default function Contact() {
         </Reveal>
 
         <Reveal delay={0.1} className="mb-6">
-          <h2 className="font-black text-[clamp(2rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]/55">
+          <h2 className="font-black text-[clamp(2rem,8vw,6rem)] leading-[1.05] tracking-tight text-[#f5f5f5]">
             Get in{" "}
             <span className="bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent">
               touch.
@@ -121,7 +121,7 @@ export default function Contact() {
             href="https://github.com/kikicodex"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5]/55 hover:border-[#E0607A]/50 hover:shadow-[0_0_17px_rgba(224,96,122,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#E0607A]/50 hover:shadow-[0_0_17px_rgba(224,96,122,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <GitHubIcon />
             GitHub
@@ -130,7 +130,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/keerthana-krr"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5]/55 hover:border-[#F5A0BB]/50 hover:shadow-[0_0_17px_rgba(245,160,187,0.17)] transition-all duration-200 text-sm font-medium"
+            className="flex items-center gap-2 px-5 py-3 rounded-none border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#F5A0BB]/50 hover:shadow-[0_0_17px_rgba(245,160,187,0.17)] transition-all duration-200 text-sm font-medium"
           >
             <LinkedInIcon />
             LinkedIn
