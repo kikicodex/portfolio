@@ -86,7 +86,7 @@ function CategoryBlock({ cat, index }: { cat: SkillCategory; index: number }) {
         >
           {cat.icon}
         </span>
-        <h3 className="font-semibold text-sm text-[#f5f5f5] tracking-wide">{cat.name}</h3>
+        <h3 className="font-semibold text-sm text-[#f5f5f5]/55 tracking-wide">{cat.name}</h3>
       </div>
       <div className="flex flex-wrap gap-2">
         {cat.skills.map((skill, si) =>
@@ -118,7 +118,7 @@ export default function Skills() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]/55">
               What I work with
             </h2>
           </Reveal>

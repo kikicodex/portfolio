@@ -161,7 +161,7 @@ function ProjectTiltCard({
           )}
         </div>
 
-        <h3 className="font-black text-3xl md:text-4xl tracking-tight text-[#f5f5f5]">
+        <h3 className="font-black text-3xl md:text-4xl tracking-tight text-[#f5f5f5]/55">
           {project.title}
         </h3>
 
@@ -174,7 +174,7 @@ function ProjectTiltCard({
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2.5 py-1 rounded-none text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5] hover:border-[#E0607A]/50 transition-all duration-200"
+              className="px-2.5 py-1 rounded-none text-xs font-mono border border-[#222] bg-[#111] text-[#71717a] hover:text-[#f5f5f5]/55 hover:border-[#E0607A]/50 transition-all duration-200"
             >
               {tag}
             </span>
@@ -219,7 +219,7 @@ export default function Projects() {
             </p>
           </Reveal>
           <Reveal delay={0.1}>
-            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+            <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]/55">
               My work
             </h2>
           </Reveal>
