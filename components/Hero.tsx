@@ -123,8 +123,8 @@ export default function Hero() {
       </motion.div>
 
       {/* Bottom black fade — blends catwoman into marquee */}
-      <div className="absolute bottom-0 inset-x-0 h-72 pointer-events-none z-20"
-        style={{ background: "linear-gradient(to top, #000000 0%, #000000 20%, transparent 100%)" }}
+      <div className="absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-20"
+        style={{ background: "linear-gradient(to top, #000000 0%, #000000 35%, transparent 100%)" }}
       />
 
       {/* Tech marquee */}
