@@ -43,15 +43,6 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none z-0" />
 
-      {/* Avatar — desktop only, absolute right column */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="hidden lg:flex absolute inset-y-0 right-0 w-[46%] items-end justify-center z-30 pointer-events-none pb-16"
-      >
-        <DeveloperAvatar />
-      </motion.div>
 
       {/* Main content */}
       <div className="relative z-50 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
