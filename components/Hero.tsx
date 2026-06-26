@@ -97,15 +97,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Avatar — mobile only, z-30 so gradient at z-40 overlays it */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.3 }}
-        className="lg:hidden absolute inset-x-0 top-32 flex justify-center z-30 pointer-events-none"
-      >
-        <DeveloperAvatar />
-      </motion.div>
 
       {/* CTAs */}
       <motion.div
