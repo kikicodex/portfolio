@@ -39,13 +39,13 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="hidden lg:flex absolute inset-y-0 right-0 w-[46%] items-end justify-center z-10 pointer-events-none pb-16"
+        className="hidden lg:flex absolute inset-y-0 right-0 w-[46%] items-end justify-center z-30 pointer-events-none pb-16"
       >
         <DeveloperAvatar />
       </motion.div>
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
+      <div className="relative z-30 flex-1 flex items-center px-6 md:px-16 lg:px-24 pt-16">
         <div className="w-full max-w-7xl mx-auto">
 
           {/* Text column — left 54%, avatar is absolute on right */}
