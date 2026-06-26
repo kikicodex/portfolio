@@ -28,7 +28,7 @@ export default function Hero() {
           alt=""
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center scale-150 md:scale-100"
         />
         <div className="absolute inset-0 bg-[#0a0a0a]/80" />
       </div>
