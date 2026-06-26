@@ -65,10 +65,9 @@ export default function Hero() {
                 initial={{ y: "105%" }}
                 animate={{ y: "0%" }}
                 transition={{ duration: 1, delay: 0.1, ease }}
-                className="font-black text-[clamp(2rem,2.6vw,2.5rem)] leading-[1.6] tracking-tight text-[#f5f5f5]"
+                className="font-black text-[clamp(1rem,6.5vw,2.5rem)] leading-[1.6] tracking-tight text-[#f5f5f5] whitespace-nowrap"
               >
-                <span className="md:hidden">Keerthana KR</span>
-                <span className="hidden md:inline">Keerthana K R</span>
+                Keerthana K R
               </motion.h1>
             </div>
 
