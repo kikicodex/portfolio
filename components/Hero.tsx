@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         {/* Mobile background */}
         <Image
-          src="/background2.png"
+          src="/background3.jpeg"
           alt=""
           fill
           priority
