@@ -124,7 +124,7 @@ export default function Hero() {
 
       {/* Bottom black fade — blends catwoman into marquee */}
       <div className="absolute bottom-0 inset-x-0 h-[600px] pointer-events-none z-20"
-        style={{ background: "linear-gradient(to top, #000000 0%, #000000 35%, transparent 100%)" }}
+        style={{ background: "linear-gradient(to top, #000000 0%, #000000 32%, transparent 100%)" }}
       />
 
       {/* Tech marquee */}
