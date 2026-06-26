@@ -28,13 +28,11 @@ body {
   -moz-osx-font-smoothing: none;
 }
 
-/* Minecraft pixel font — desktop only (too wide for mobile) */
-@media (min-width: 768px) {
-  h1, h2, h3 {
-    font-family: var(--font-minecraft), monospace !important;
-    line-height: 1.6 !important;
-    letter-spacing: 0.02em;
-  }
+/* Minecraft pixel font */
+h1, h2, h3 {
+  font-family: var(--font-minecraft), monospace !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.02em;
 }
 
 
