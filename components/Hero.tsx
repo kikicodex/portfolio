@@ -122,8 +122,13 @@ export default function Hero() {
         </div>
       </motion.div>
 
+      {/* Bottom black fade — blends catwoman into marquee */}
+      <div className="absolute bottom-0 inset-x-0 h-72 pointer-events-none z-20"
+        style={{ background: "linear-gradient(to top, #000000 0%, #000000 20%, transparent 100%)" }}
+      />
+
       {/* Tech marquee */}
-      <div className="relative z-10 border-t border-[#1a1a1a] py-5 overflow-hidden">
+      <div className="relative z-30 border-t border-[#1a1a1a] py-5 overflow-hidden bg-black">
         <div className="flex gap-0 items-center whitespace-nowrap w-max animate-marquee">
           {techStack.map((tech, i) => (
             <span key={i} className="inline-flex items-center gap-3 px-6 text-sm text-[#52525b] font-mono uppercase tracking-widest">
