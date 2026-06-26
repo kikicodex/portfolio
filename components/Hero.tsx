@@ -102,7 +102,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="relative z-10 px-6 md:px-16 lg:px-24 pb-10"
+        className="relative z-30 px-6 md:px-16 lg:px-24 pb-10"
       >
         <div className="w-full max-w-7xl mx-auto">
           <div className="lg:max-w-[54%] flex flex-wrap gap-4">
