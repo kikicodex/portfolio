@@ -39,7 +39,7 @@ export default function Hero() {
           priority
           className="hidden md:block object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[#0a0a0a]/80" />
+        <div className="absolute inset-0 bg-[#0a0a0a]/20 md:bg-[#0a0a0a]/80" />
       </div>
       <div className="absolute inset-0 bg-grid opacity-30 pointer-events-none z-0" />
 
