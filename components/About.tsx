@@ -80,7 +80,7 @@ export default function About() {
           {/* Left: Bold statement */}
           <div>
             <Reveal>
-              <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]">
+              <h2 className="font-black text-[clamp(2rem,4vw,3.5rem)] leading-[1.1] tracking-tight text-[#f5f5f5]/55">
                 Made with{" "}
                 <span className="bg-gradient-to-r from-[#E0607A] to-[#F5A0BB] bg-clip-text text-transparent">
                   intent.
@@ -104,15 +104,15 @@ export default function About() {
             className="flex flex-col gap-8"
           >
             <p className="text-[#a1a1aa] text-lg leading-[1.85] font-light">
-              <span className="text-[#f5f5f5] font-medium">CS grad</span>{" "}
+              <span className="text-[#f5f5f5]/55 font-medium">CS grad</span>{" "}
               from VTU Bangalore. I launched an AI-powered study app solo — end-to-end, from problem
               definition to a live product on web, iOS, and Android.
             </p>
             <p className="text-[#a1a1aa] text-lg leading-[1.85] font-light">
               I think in{" "}
-              <span className="text-[#f5f5f5] font-medium">user flows</span>,{" "}
-              <span className="text-[#f5f5f5] font-medium">trade-offs</span>, and{" "}
-              <span className="text-[#f5f5f5] font-medium">priorities</span>. Technical enough to
+              <span className="text-[#f5f5f5]/55 font-medium">user flows</span>,{" "}
+              <span className="text-[#f5f5f5]/55 font-medium">trade-offs</span>, and{" "}
+              <span className="text-[#f5f5f5]/55 font-medium">priorities</span>. Technical enough to
               build it myself — product-minded enough to know what not to build.
             </p>
 
