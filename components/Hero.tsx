@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import DeveloperAvatar from "./DeveloperAvatar";
 
 const techStack = [
   "Product Strategy", "PRD Writing", "Roadmapping", "User Flows", "A/B Reasoning",
