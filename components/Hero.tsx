@@ -132,7 +132,7 @@ export default function Hero() {
       />
 
       {/* Tech marquee */}
-      <div className="relative z-30 border-t border-[#1a1a1a] py-5 overflow-hidden bg-black">
+      <div className="relative z-50 border-t border-[#1a1a1a] py-5 overflow-hidden bg-black">
         <div className="flex gap-0 items-center whitespace-nowrap w-max animate-marquee">
           {techStack.map((tech, i) => (
             <span key={i} className="inline-flex items-center gap-3 px-6 text-sm text-[#52525b] font-mono uppercase tracking-widest">
