@@ -67,7 +67,8 @@ export default function Hero() {
                 transition={{ duration: 1, delay: 0.1, ease }}
                 className="font-black text-[clamp(2rem,2.6vw,2.5rem)] leading-[1.6] tracking-tight text-[#f5f5f5]"
               >
-                Keerthana K R
+                <span className="md:hidden">Keerthana KR</span>
+                <span className="hidden md:inline">Keerthana K R</span>
               </motion.h1>
             </div>
 
